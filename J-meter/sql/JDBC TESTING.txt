@@ -1,0 +1,19 @@
+1.Sql query ku kila result variable la oru value kutukanum
+antha value va getobjectkula potanum
+
+2.etha watch pana assertion Results ah kutukanum
+
+3.result ah varify pana nammala oru code alutha 
+beanshall assertion use panrom
+
+
+if(vars.getObject("Result").size()==1)
+{
+	log.info("the result is pass");
+}
+else
+{
+	FailureMessage="the result is fail";
+	Failure=true;
+	prev.setStopThread(true);
+}

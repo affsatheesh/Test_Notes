@@ -1,0 +1,312 @@
+SQL*Plus: Release 10.2.0.3.0 - Production on Mon Jun 29 20:23:27 2020
+
+Copyright (c) 1982, 2006, Oracle.  All Rights Reserved.
+
+
+Connected to:
+Oracle Database 10g Enterprise Edition Release 10.2.0.3.0 - Production
+With the Partitioning, OLAP and Data Mining options
+
+SQL> set pagesize 800
+SQL> set linesize 800;
+SQL> select * from emp;
+
+     EMPNO ENAME      JOB              MGR HIREDATE         SAL       COMM     DEPTNO
+---------- ---------- --------- ---------- --------- ---------- ---------- ----------
+      7369 SMITH      CLERK           7902 17-DEC-80        800                    20
+      7499 ALLEN      SALESMAN        7698 20-FEB-81       1600        300         30
+      7521 WARD       SALESMAN        7698 22-FEB-81       1250        500         30
+      7566 JONES      MANAGER         7839 02-APR-81       2975                    20
+      7654 MARTIN     SALESMAN        7698 28-SEP-81       1250       1400         30
+      7698 BLAKE      MANAGER         7839 01-MAY-81       2850                    30
+      7782 CLARK      MANAGER         7839 09-JUN-81       2450                    10
+      7788 SCOTT      ANALYST         7566 19-APR-87       3000                    20
+      7839 KING       PRESIDENT            17-NOV-81       5000                    10
+      7844 TURNER     SALESMAN        7698 08-SEP-81       1500          0         30
+      7876 ADAMS      CLERK           7788 23-MAY-87       1100                    20
+      7900 JAMES      CLERK           7698 03-DEC-81        950                    30
+      7902 FORD       ANALYST         7566 03-DEC-81       3000                    20
+      7934 MILLER     CLERK           7782 23-JAN-82       1300                    10
+
+14 rows selected.
+
+SQL>  select * from emp e,emp m;
+
+     EMPNO ENAME      JOB              MGR HIREDATE         SAL       COMM     DEPTNO      EMPNO ENAME      JOB         
+---------- ---------- --------- ---------- --------- ---------- ---------- ---------- ---------- ---
+      7369 SMITH      CLERK           7902 17-DEC-80        800                    20       7369 SMITH      CLERK           7902 1
+      7369 SMITH      CLERK           7902 17-DEC-80        800                    20       7499 ALLEN      SALESMAN        769
+      7369 SMITH      CLERK           7902 17-DEC-80        800                    20       7521 WARD       SALESMAN        7698
+      7369 SMITH      CLERK           7902 17-DEC-80        800                    20       7566 JONES      MANAGER         7839
+      7369 SMITH      CLERK           7902 17-DEC-80        800                    20       7654 MARTIN     SALESMAN        76
+      7369 SMITH      CLERK           7902 17-DEC-80        800                    20       7698 BLAKE      MANAGER         7839
+      7369 SMITH      CLERK           7902 17-DEC-80        800                    20       7782 CLARK      MANAGER         7839
+      7369 SMITH      CLERK           7902 17-DEC-80        800                    20       7788 SCOTT      ANALYST         7566
+      7369 SMITH      CLERK           7902 17-DEC-80        800                    20       7839 KING       PRESIDENT            17-NO
+      7369 SMITH      CLERK           7902 17-DEC-80        800                    20       7844 TURNER     SALESMAN        76
+      7369 SMITH      CLERK           7902 17-DEC-80        800                    20       7876 ADAMS      CLERK           7788 2
+      7369 SMITH      CLERK           7902 17-DEC-80        800                    20       7900 JAMES      CLERK           7698 0
+      7369 SMITH      CLERK           7902 17-DEC-80        800                    20       7902 FORD       ANALYST         7566 
+      7369 SMITH      CLERK           7902 17-DEC-80        800                    20       7934 MILLER     CLERK           7782 
+      7499 ALLEN      SALESMAN        7698 20-FEB-81       1600        300         30       7369 SMITH      CLER
+      7499 ALLEN      SALESMAN        7698 20-FEB-81       1600        300         30       7499 ALLEN      SALE
+      7499 ALLEN      SALESMAN        7698 20-FEB-81       1600        300         30       7521 WARD       SALES
+      7499 ALLEN      SALESMAN        7698 20-FEB-81       1600        300         30       7566 JONES      MANA
+      7499 ALLEN      SALESMAN        7698 20-FEB-81       1600        300         30       7654 MARTIN     SAL
+      7499 ALLEN      SALESMAN        7698 20-FEB-81       1600        300         30       7698 BLAKE      MANA
+      7499 ALLEN      SALESMAN        7698 20-FEB-81       1600        300         30       7782 CLARK      MANA
+      7499 ALLEN      SALESMAN        7698 20-FEB-81       1600        300         30       7788 SCOTT      ANAL
+      7499 ALLEN      SALESMAN        7698 20-FEB-81       1600        300         30       7839 KING       PRESI
+      7499 ALLEN      SALESMAN        7698 20-FEB-81       1600        300         30       7844 TURNER     SAL
+      7499 ALLEN      SALESMAN        7698 20-FEB-81       1600        300         30       7876 ADAMS      CLER
+      7499 ALLEN      SALESMAN        7698 20-FEB-81       1600        300         30       7900 JAMES      CLER
+      7499 ALLEN      SALESMAN        7698 20-FEB-81       1600        300         30       7902 FORD       ANALY
+      7499 ALLEN      SALESMAN        7698 20-FEB-81       1600        300         30       7934 MILLER     CLE
+      7521 WARD       SALESMAN        7698 22-FEB-81       1250        500         30       7369 SMITH      CLER
+      7521 WARD       SALESMAN        7698 22-FEB-81       1250        500         30       7499 ALLEN      SALE
+      7521 WARD       SALESMAN        7698 22-FEB-81       1250        500         30       7521 WARD       SALES
+      7521 WARD       SALESMAN        7698 22-FEB-81       1250        500         30       7566 JONES      MANA
+      7521 WARD       SALESMAN        7698 22-FEB-81       1250        500         30       7654 MARTIN     SAL
+      7521 WARD       SALESMAN        7698 22-FEB-81       1250        500         30       7698 BLAKE      MANA
+      7521 WARD       SALESMAN        7698 22-FEB-81       1250        500         30       7782 CLARK      MANA
+      7521 WARD       SALESMAN        7698 22-FEB-81       1250        500         30       7788 SCOTT      ANAL
+      7521 WARD       SALESMAN        7698 22-FEB-81       1250        500         30       7839 KING       PRESI
+      7521 WARD       SALESMAN        7698 22-FEB-81       1250        500         30       7844 TURNER     SAL
+      7521 WARD       SALESMAN        7698 22-FEB-81       1250        500         30       7876 ADAMS      CLER
+      7521 WARD       SALESMAN        7698 22-FEB-81       1250        500         30       7900 JAMES      CLER
+      7521 WARD       SALESMAN        7698 22-FEB-81       1250        500         30       7902 FORD       ANALY
+      7521 WARD       SALESMAN        7698 22-FEB-81       1250        500         30       7934 MILLER     CLE
+      7566 JONES      MANAGER         7839 02-APR-81       2975                    20       7369 SMITH      CLERK           7902
+      7566 JONES      MANAGER         7839 02-APR-81       2975                    20       7499 ALLEN      SALESMAN        7
+      7566 JONES      MANAGER         7839 02-APR-81       2975                    20       7521 WARD       SALESMAN        76
+      7566 JONES      MANAGER         7839 02-APR-81       2975                    20       7566 JONES      MANAGER         78
+      7566 JONES      MANAGER         7839 02-APR-81       2975                    20       7654 MARTIN     SALESMAN        
+      7566 JONES      MANAGER         7839 02-APR-81       2975                    20       7698 BLAKE      MANAGER         78
+      7566 JONES      MANAGER         7839 02-APR-81       2975                    20       7782 CLARK      MANAGER         78
+      7566 JONES      MANAGER         7839 02-APR-81       2975                    20       7788 SCOTT      ANALYST         75
+      7566 JONES      MANAGER         7839 02-APR-81       2975                    20       7839 KING       PRESIDENT            17-
+      7566 JONES      MANAGER         7839 02-APR-81       2975                    20       7844 TURNER     SALESMAN        
+      7566 JONES      MANAGER         7839 02-APR-81       2975                    20       7876 ADAMS      CLERK           7788
+      7566 JONES      MANAGER         7839 02-APR-81       2975                    20       7900 JAMES      CLERK           7698
+      7566 JONES      MANAGER         7839 02-APR-81       2975                    20       7902 FORD       ANALYST         756
+      7566 JONES      MANAGER         7839 02-APR-81       2975                    20       7934 MILLER     CLERK           778
+      7654 MARTIN     SALESMAN        7698 28-SEP-81       1250       1400         30       7369 SMITH      CLER
+      7654 MARTIN     SALESMAN        7698 28-SEP-81       1250       1400         30       7499 ALLEN      SALE
+      7654 MARTIN     SALESMAN        7698 28-SEP-81       1250       1400         30       7521 WARD       SALES
+      7654 MARTIN     SALESMAN        7698 28-SEP-81       1250       1400         30       7566 JONES      MANA
+      7654 MARTIN     SALESMAN        7698 28-SEP-81       1250       1400         30       7654 MARTIN     SAL
+      7654 MARTIN     SALESMAN        7698 28-SEP-81       1250       1400         30       7698 BLAKE      MANA
+      7654 MARTIN     SALESMAN        7698 28-SEP-81       1250       1400         30       7782 CLARK      MANA
+      7654 MARTIN     SALESMAN        7698 28-SEP-81       1250       1400         30       7788 SCOTT      ANAL
+      7654 MARTIN     SALESMAN        7698 28-SEP-81       1250       1400         30       7839 KING       PRESI
+      7654 MARTIN     SALESMAN        7698 28-SEP-81       1250       1400         30       7844 TURNER     SAL
+      7654 MARTIN     SALESMAN        7698 28-SEP-81       1250       1400         30       7876 ADAMS      CLER
+      7654 MARTIN     SALESMAN        7698 28-SEP-81       1250       1400         30       7900 JAMES      CLER
+      7654 MARTIN     SALESMAN        7698 28-SEP-81       1250       1400         30       7902 FORD       ANALY
+      7654 MARTIN     SALESMAN        7698 28-SEP-81       1250       1400         30       7934 MILLER     CLE
+      7698 BLAKE      MANAGER         7839 01-MAY-81       2850                    30       7369 SMITH      CLERK           7902
+      7698 BLAKE      MANAGER         7839 01-MAY-81       2850                    30       7499 ALLEN      SALESMAN        7
+      7698 BLAKE      MANAGER         7839 01-MAY-81       2850                    30       7521 WARD       SALESMAN        76
+      7698 BLAKE      MANAGER         7839 01-MAY-81       2850                    30       7566 JONES      MANAGER         78
+      7698 BLAKE      MANAGER         7839 01-MAY-81       2850                    30       7654 MARTIN     SALESMAN        
+      7698 BLAKE      MANAGER         7839 01-MAY-81       2850                    30       7698 BLAKE      MANAGER         78
+      7698 BLAKE      MANAGER         7839 01-MAY-81       2850                    30       7782 CLARK      MANAGER         78
+      7698 BLAKE      MANAGER         7839 01-MAY-81       2850                    30       7788 SCOTT      ANALYST         75
+      7698 BLAKE      MANAGER         7839 01-MAY-81       2850                    30       7839 KING       PRESIDENT            17-
+      7698 BLAKE      MANAGER         7839 01-MAY-81       2850                    30       7844 TURNER     SALESMAN        
+      7698 BLAKE      MANAGER         7839 01-MAY-81       2850                    30       7876 ADAMS      CLERK           7788
+      7698 BLAKE      MANAGER         7839 01-MAY-81       2850                    30       7900 JAMES      CLERK           7698
+      7698 BLAKE      MANAGER         7839 01-MAY-81       2850                    30       7902 FORD       ANALYST         756
+      7698 BLAKE      MANAGER         7839 01-MAY-81       2850                    30       7934 MILLER     CLERK           778
+      7782 CLARK      MANAGER         7839 09-JUN-81       2450                    10       7369 SMITH      CLERK           7902
+      7782 CLARK      MANAGER         7839 09-JUN-81       2450                    10       7499 ALLEN      SALESMAN        7
+      7782 CLARK      MANAGER         7839 09-JUN-81       2450                    10       7521 WARD       SALESMAN        76
+      7782 CLARK      MANAGER         7839 09-JUN-81       2450                    10       7566 JONES      MANAGER         78
+      7782 CLARK      MANAGER         7839 09-JUN-81       2450                    10       7654 MARTIN     SALESMAN        
+      7782 CLARK      MANAGER         7839 09-JUN-81       2450                    10       7698 BLAKE      MANAGER         78
+      7782 CLARK      MANAGER         7839 09-JUN-81       2450                    10       7782 CLARK      MANAGER         78
+      7782 CLARK      MANAGER         7839 09-JUN-81       2450                    10       7788 SCOTT      ANALYST         75
+      7782 CLARK      MANAGER         7839 09-JUN-81       2450                    10       7839 KING       PRESIDENT            17-
+      7782 CLARK      MANAGER         7839 09-JUN-81       2450                    10       7844 TURNER     SALESMAN        
+      7782 CLARK      MANAGER         7839 09-JUN-81       2450                    10       7876 ADAMS      CLERK           7788
+      7782 CLARK      MANAGER         7839 09-JUN-81       2450                    10       7900 JAMES      CLERK           7698
+      7782 CLARK      MANAGER         7839 09-JUN-81       2450                    10       7902 FORD       ANALYST         756
+      7782 CLARK      MANAGER         7839 09-JUN-81       2450                    10       7934 MILLER     CLERK           778
+      7788 SCOTT      ANALYST         7566 19-APR-87       3000                    20       7369 SMITH      CLERK           7902
+      7788 SCOTT      ANALYST         7566 19-APR-87       3000                    20       7499 ALLEN      SALESMAN        7
+      7788 SCOTT      ANALYST         7566 19-APR-87       3000                    20       7521 WARD       SALESMAN        76
+      7788 SCOTT      ANALYST         7566 19-APR-87       3000                    20       7566 JONES      MANAGER         78
+      7788 SCOTT      ANALYST         7566 19-APR-87       3000                    20       7654 MARTIN     SALESMAN        
+      7788 SCOTT      ANALYST         7566 19-APR-87       3000                    20       7698 BLAKE      MANAGER         78
+      7788 SCOTT      ANALYST         7566 19-APR-87       3000                    20       7782 CLARK      MANAGER         78
+      7788 SCOTT      ANALYST         7566 19-APR-87       3000                    20       7788 SCOTT      ANALYST         75
+      7788 SCOTT      ANALYST         7566 19-APR-87       3000                    20       7839 KING       PRESIDENT            17-
+      7788 SCOTT      ANALYST         7566 19-APR-87       3000                    20       7844 TURNER     SALESMAN        
+      7788 SCOTT      ANALYST         7566 19-APR-87       3000                    20       7876 ADAMS      CLERK           7788
+      7788 SCOTT      ANALYST         7566 19-APR-87       3000                    20       7900 JAMES      CLERK           7698
+      7788 SCOTT      ANALYST         7566 19-APR-87       3000                    20       7902 FORD       ANALYST         756
+      7788 SCOTT      ANALYST         7566 19-APR-87       3000                    20       7934 MILLER     CLERK           778
+      7839 KING       PRESIDENT            17-NOV-81       5000                    10       7369 SMITH      CLERK           7902 17-D
+      7839 KING       PRESIDENT            17-NOV-81       5000                    10       7499 ALLEN      SALESMAN        7698 2
+      7839 KING       PRESIDENT            17-NOV-81       5000                    10       7521 WARD       SALESMAN        7698 22
+      7839 KING       PRESIDENT            17-NOV-81       5000                    10       7566 JONES      MANAGER         7839 02
+      7839 KING       PRESIDENT            17-NOV-81       5000                    10       7654 MARTIN     SALESMAN        7698 
+      7839 KING       PRESIDENT            17-NOV-81       5000                    10       7698 BLAKE      MANAGER         7839 01
+      7839 KING       PRESIDENT            17-NOV-81       5000                    10       7782 CLARK      MANAGER         7839 09
+      7839 KING       PRESIDENT            17-NOV-81       5000                    10       7788 SCOTT      ANALYST         7566 19
+      7839 KING       PRESIDENT            17-NOV-81       5000                    10       7839 KING       PRESIDENT            17-NOV-8
+      7839 KING       PRESIDENT            17-NOV-81       5000                    10       7844 TURNER     SALESMAN        7698 
+      7839 KING       PRESIDENT            17-NOV-81       5000                    10       7876 ADAMS      CLERK           7788 23-M
+      7839 KING       PRESIDENT            17-NOV-81       5000                    10       7900 JAMES      CLERK           7698 03-D
+      7839 KING       PRESIDENT            17-NOV-81       5000                    10       7902 FORD       ANALYST         7566 03-
+      7839 KING       PRESIDENT            17-NOV-81       5000                    10       7934 MILLER     CLERK           7782 23-
+      7844 TURNER     SALESMAN        7698 08-SEP-81       1500          0         30       7369 SMITH      CLERK           7
+      7844 TURNER     SALESMAN        7698 08-SEP-81       1500          0         30       7499 ALLEN      SALESMAN      
+      7844 TURNER     SALESMAN        7698 08-SEP-81       1500          0         30       7521 WARD       SALESMAN       
+      7844 TURNER     SALESMAN        7698 08-SEP-81       1500          0         30       7566 JONES      MANAGER        
+      7844 TURNER     SALESMAN        7698 08-SEP-81       1500          0         30       7654 MARTIN     SALESMAN     
+      7844 TURNER     SALESMAN        7698 08-SEP-81       1500          0         30       7698 BLAKE      MANAGER        
+      7844 TURNER     SALESMAN        7698 08-SEP-81       1500          0         30       7782 CLARK      MANAGER        
+      7844 TURNER     SALESMAN        7698 08-SEP-81       1500          0         30       7788 SCOTT      ANALYST        
+      7844 TURNER     SALESMAN        7698 08-SEP-81       1500          0         30       7839 KING       PRESIDENT            
+      7844 TURNER     SALESMAN        7698 08-SEP-81       1500          0         30       7844 TURNER     SALESMAN     
+      7844 TURNER     SALESMAN        7698 08-SEP-81       1500          0         30       7876 ADAMS      CLERK           7
+      7844 TURNER     SALESMAN        7698 08-SEP-81       1500          0         30       7900 JAMES      CLERK           7
+      7844 TURNER     SALESMAN        7698 08-SEP-81       1500          0         30       7902 FORD       ANALYST         
+      7844 TURNER     SALESMAN        7698 08-SEP-81       1500          0         30       7934 MILLER     CLERK           
+      7876 ADAMS      CLERK           7788 23-MAY-87       1100                    20       7369 SMITH      CLERK           7902 1
+      7876 ADAMS      CLERK           7788 23-MAY-87       1100                    20       7499 ALLEN      SALESMAN        769
+      7876 ADAMS      CLERK           7788 23-MAY-87       1100                    20       7521 WARD       SALESMAN        7698
+      7876 ADAMS      CLERK           7788 23-MAY-87       1100                    20       7566 JONES      MANAGER         7839
+      7876 ADAMS      CLERK           7788 23-MAY-87       1100                    20       7654 MARTIN     SALESMAN        76
+      7876 ADAMS      CLERK           7788 23-MAY-87       1100                    20       7698 BLAKE      MANAGER         7839
+      7876 ADAMS      CLERK           7788 23-MAY-87       1100                    20       7782 CLARK      MANAGER         7839
+      7876 ADAMS      CLERK           7788 23-MAY-87       1100                    20       7788 SCOTT      ANALYST         7566
+      7876 ADAMS      CLERK           7788 23-MAY-87       1100                    20       7839 KING       PRESIDENT            17-NO
+      7876 ADAMS      CLERK           7788 23-MAY-87       1100                    20       7844 TURNER     SALESMAN        76
+      7876 ADAMS      CLERK           7788 23-MAY-87       1100                    20       7876 ADAMS      CLERK           7788 2
+      7876 ADAMS      CLERK           7788 23-MAY-87       1100                    20       7900 JAMES      CLERK           7698 0
+      7876 ADAMS      CLERK           7788 23-MAY-87       1100                    20       7902 FORD       ANALYST         7566 
+      7876 ADAMS      CLERK           7788 23-MAY-87       1100                    20       7934 MILLER     CLERK           7782 
+      7900 JAMES      CLERK           7698 03-DEC-81        950                    30       7369 SMITH      CLERK           7902 1
+      7900 JAMES      CLERK           7698 03-DEC-81        950                    30       7499 ALLEN      SALESMAN        769
+      7900 JAMES      CLERK           7698 03-DEC-81        950                    30       7521 WARD       SALESMAN        7698
+      7900 JAMES      CLERK           7698 03-DEC-81        950                    30       7566 JONES      MANAGER         7839
+      7900 JAMES      CLERK           7698 03-DEC-81        950                    30       7654 MARTIN     SALESMAN        76
+      7900 JAMES      CLERK           7698 03-DEC-81        950                    30       7698 BLAKE      MANAGER         7839
+      7900 JAMES      CLERK           7698 03-DEC-81        950                    30       7782 CLARK      MANAGER         7839
+      7900 JAMES      CLERK           7698 03-DEC-81        950                    30       7788 SCOTT      ANALYST         7566
+      7900 JAMES      CLERK           7698 03-DEC-81        950                    30       7839 KING       PRESIDENT            17-NO
+      7900 JAMES      CLERK           7698 03-DEC-81        950                    30       7844 TURNER     SALESMAN        76
+      7900 JAMES      CLERK           7698 03-DEC-81        950                    30       7876 ADAMS      CLERK           7788 2
+      7900 JAMES      CLERK           7698 03-DEC-81        950                    30       7900 JAMES      CLERK           7698 0
+      7900 JAMES      CLERK           7698 03-DEC-81        950                    30       7902 FORD       ANALYST         7566 
+      7900 JAMES      CLERK           7698 03-DEC-81        950                    30       7934 MILLER     CLERK           7782 
+      7902 FORD       ANALYST         7566 03-DEC-81       3000                    20       7369 SMITH      CLERK           7902
+      7902 FORD       ANALYST         7566 03-DEC-81       3000                    20       7499 ALLEN      SALESMAN        7
+      7902 FORD       ANALYST         7566 03-DEC-81       3000                    20       7521 WARD       SALESMAN        76
+      7902 FORD       ANALYST         7566 03-DEC-81       3000                    20       7566 JONES      MANAGER         78
+      7902 FORD       ANALYST         7566 03-DEC-81       3000                    20       7654 MARTIN     SALESMAN        
+      7902 FORD       ANALYST         7566 03-DEC-81       3000                    20       7698 BLAKE      MANAGER         78
+      7902 FORD       ANALYST         7566 03-DEC-81       3000                    20       7782 CLARK      MANAGER         78
+      7902 FORD       ANALYST         7566 03-DEC-81       3000                    20       7788 SCOTT      ANALYST         75
+      7902 FORD       ANALYST         7566 03-DEC-81       3000                    20       7839 KING       PRESIDENT            17-
+      7902 FORD       ANALYST         7566 03-DEC-81       3000                    20       7844 TURNER     SALESMAN        
+      7902 FORD       ANALYST         7566 03-DEC-81       3000                    20       7876 ADAMS      CLERK           7788
+      7902 FORD       ANALYST         7566 03-DEC-81       3000                    20       7900 JAMES      CLERK           7698
+      7902 FORD       ANALYST         7566 03-DEC-81       3000                    20       7902 FORD       ANALYST         756
+      7902 FORD       ANALYST         7566 03-DEC-81       3000                    20       7934 MILLER     CLERK           778
+      7934 MILLER     CLERK           7782 23-JAN-82       1300                    10       7369 SMITH      CLERK           7902 1
+      7934 MILLER     CLERK           7782 23-JAN-82       1300                    10       7499 ALLEN      SALESMAN        769
+      7934 MILLER     CLERK           7782 23-JAN-82       1300                    10       7521 WARD       SALESMAN        7698
+      7934 MILLER     CLERK           7782 23-JAN-82       1300                    10       7566 JONES      MANAGER         7839
+      7934 MILLER     CLERK           7782 23-JAN-82       1300                    10       7654 MARTIN     SALESMAN        76
+      7934 MILLER     CLERK           7782 23-JAN-82       1300                    10       7698 BLAKE      MANAGER         7839
+      7934 MILLER     CLERK           7782 23-JAN-82       1300                    10       7782 CLARK      MANAGER         7839
+      7934 MILLER     CLERK           7782 23-JAN-82       1300                    10       7788 SCOTT      ANALYST         7566
+      7934 MILLER     CLERK           7782 23-JAN-82       1300                    10       7839 KING       PRESIDENT            17-NO
+      7934 MILLER     CLERK           7782 23-JAN-82       1300                    10       7844 TURNER     SALESMAN        76
+      7934 MILLER     CLERK           7782 23-JAN-82       1300                    10       7876 ADAMS      CLERK           7788 2
+      7934 MILLER     CLERK           7782 23-JAN-82       1300                    10       7900 JAMES      CLERK           7698 0
+      7934 MILLER     CLERK           7782 23-JAN-82       1300                    10       7902 FORD       ANALYST         7566 
+      7934 MILLER     CLERK           7782 23-JAN-82       1300                    10       7934 MILLER     CLERK           7782 
+
+196 rows selected.
+
+SQL> 
+SQL> select * from emp m;
+
+     EMPNO ENAME      JOB              MGR HIREDATE         SAL       COMM     DEPTNO
+---------- ---------- --------- ---------- --------- ---------- ---------- ----------
+      7369 SMITH      CLERK           7902 17-DEC-80        800                    20
+      7499 ALLEN      SALESMAN        7698 20-FEB-81       1600        300         30
+      7521 WARD       SALESMAN        7698 22-FEB-81       1250        500         30
+      7566 JONES      MANAGER         7839 02-APR-81       2975                    20
+      7654 MARTIN     SALESMAN        7698 28-SEP-81       1250       1400         30
+      7698 BLAKE      MANAGER         7839 01-MAY-81       2850                    30
+      7782 CLARK      MANAGER         7839 09-JUN-81       2450                    10
+      7788 SCOTT      ANALYST         7566 19-APR-87       3000                    20
+      7839 KING       PRESIDENT            17-NOV-81       5000                    10
+      7844 TURNER     SALESMAN        7698 08-SEP-81       1500          0         30
+      7876 ADAMS      CLERK           7788 23-MAY-87       1100                    20
+      7900 JAMES      CLERK           7698 03-DEC-81        950                    30
+      7902 FORD       ANALYST         7566 03-DEC-81       3000                    20
+      7934 MILLER     CLERK           7782 23-JAN-82       1300                    10
+
+14 rows selected.
+
+SQL> 
+SQL> select e.ename,m.ename from emp e,emp m
+  2  where e.mgr=m.empno;
+
+ENAME      ENAME
+---------- ----------
+FORD       JONES
+SCOTT      JONES
+JAMES      BLAKE
+TURNER     BLAKE
+MARTIN     BLAKE
+WARD       BLAKE
+ALLEN      BLAKE
+MILLER     CLARK
+ADAMS      SCOTT
+CLARK      KING
+BLAKE      KING
+JONES      KING
+SMITH      FORD
+
+13 rows selected.
+
+SQL> select e.empno,m.mgr from emp e,emp m
+  2  where e.mgr = m.empno;
+
+     EMPNO        MGR
+---------- ----------
+      7902       7839
+      7788       7839
+      7900       7839
+      7844       7839
+      7654       7839
+      7521       7839
+      7499       7839
+      7934       7839
+      7876       7566
+      7782
+      7698
+      7566
+      7369       7566
+
+13 rows selected.
+
+SQL> select e.ename from emp e,emp m
+  2  where e.sal=m.sal and
+  3  e.empno<>m.empno;
+
+ENAME
+----------
+MARTIN
+WARD
+FORD
+SCOTT
+
+SQL> 

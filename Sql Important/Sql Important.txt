@@ -1,0 +1,7 @@
+sql plus download Url - http://www.mediafire.com/file/x96d2c02t8x45xa/Oracle_Database_10G_Enterprise_edition_32_bit.zip/file
+
+Username - scott
+password - tiger
+
+set pagesize800
+set linesize800

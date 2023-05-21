@@ -1,0 +1,74 @@
+TABLE CREATION
+
+create table sz(name varchar(20),password varchar(20),pin number(10));
+
+INSERTING SINGLE VALUE
+
+insert into sz values('sathezsk','timeover',111);
+
+INSERTING MULTIPLE VALUE SAME TIME
+
+insert all 
+into sz values('sathezsk','world',1211)
+into sz values('satheesh','team',1245)
+into sz values('affsatheesh','teamover',1435);
+select * from dual;
+
+
+Alter(column)
+add====>
+       ex
+         alter table sz add
+         practice varchar(20);
+
+modify===>
+       ex
+         alter table sz modify
+         practice number(10);
+rename==>
+       ex 
+         alter table sz rename
+         column practice to dailypractic;
+drop====>
+       ex
+         alter table sz drop
+         column dailypractic;
+
+
+Rename(Table)
+        Rename sz to sathez;
+
+Drop 
+       drop table sz;
+
+truncate
+      truncate table sz;
+
+
+Table copying
+
+ create table newtablename as select ename from emp;
+
+
+clear screen
+
+cle scr
+
+Flashback(like ctrl+Z)
+
+flashback table Book to before drop;
+
+
+Purge
+single select delete in recyclebin
+purge table login;
+
+recyclebin ah Empty pana 
+purge recyclebin;
+
+
+Update Table inside values
+
+ update sz set Name='aff' where Name ='sathezsk';
+
+ 

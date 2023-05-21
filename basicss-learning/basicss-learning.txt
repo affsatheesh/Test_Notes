@@ -1,0 +1,659 @@
+
+normal takesscreenshot method 
+
+Takesscreenshot shot = (Takesscreenshot) driver;
+File source =shot.getscreenshotAS(outType.File);
+file dis = new file ("path")
+filehander.copy(source,dis);
+
+
+
+Robot class using
+
+Robot robot = new Robot();
+Diamision size = Toolgit().getdefaultToolgit().getscreensize();
+Rectangle rect = new Rectangle(size);
+BufferedImage source =robot.createscreencapture(rect);
+File dis = new File("path/name.ext");
+ImageIO.write(source,"png",dis);
+
+
+particular element screenshot
+
+WebElement element = driver.findelement(by.xpath());
+Eventfiringwebdriver fire = new Eventfiringwebdriver (driver);
+File source = element.getscreenshotAs(outType.File);
+File dis = new File("path");
+filehandler.copy(source.dis);
+
+
+
+
+
+
+By.tagname
+By.id
+By.name
+By.classname
+By.cssselecter
+By.linktext
+By.partiallinktext
+By.xpath
+
+//tagname[@attributename='attributevalue']
+//tagname[@attributename='attributevalue' or @attributename='attaributevalue']
+//tagname[@attributename='attributevalue' and @attributename='attributevalue']
+
+//tagname[text()='textsss']
+//tagname[contains(text(),'partialtext')]
+//tagname[starts-with(text(),'starttext')]
+
+//tagname[@id=' ']/parent::tagname
+//tagname[@id=' ']/child :: tagname
+//tagname[@id=' ']/ancestor :: tagname
+//tagname[@id=' ']/following :: tagname
+//tagname[@id=' ']/preceding :: tagname
+//tagname[@id=' ']/sibling :: tagname
+//tagname[@id=' ']/following-sibling :: tagname
+//tagname[@id=' ']/preceding-sibling :: tagname
+
+
+
+
+
+
+
+
+
+
+
+Dropdown
+static 
+dynamic
+--------------------------------------------
+ 
+static -singale ,mulitiple select
+
+static dropdown
+static dropdown will be not changed
+static dropdown created by using select tag and option tag
+static dropdown handled by using select class
+
+--------------------------------------------
+
+select sel = new Select();
+
+sel.selectbyIndex(); 0,1,2,3,.........
+sel.selectbyvisibletext();
+sel.selectByvalue();
+
+operational methods===>
+
+ismultiple();---boolean
+the dropdown is singal or mulitple
+
+getOptions();===list<webelement>
+getallthe options of dropdown
+
+getAllselectedOptions();==list<WebElement>
+getfirstselectedoption();==webelement
+getwrappedoption();webelement    00000000000000000000000000000000000
+
+print all options (number)
+
+list<WebElement> dropoption=driver.findelements(by.());
+select sel = new select(dropoption);
+list<webElement>list = sel.getoptions();
+sop(list.size());
+
+print all options list
+
+for(WebElement webelement:list)
+{
+string text =webelement.gettext();
+sop(text);
+}
+
+select the dropdown list
+
+sel.selectbyindex();
+sel.selectbyvisibletext()
+sel.selectbyvlaue()
+
+
+remove all dupicate using hashset
+
+set<String> hs = new hashset<string>();
+
+for(WebElement webelement : list)
+{
+String text1 = webelement.gettext();
+
+hs.add(text1);
+}
+
+for(String string :text)
+{
+sop(string)
+}
+
+remove all dupicate and maintain order using linkedhash set
+
+
+Set<String> linkedset = new linkedhashset<string>();
+
+String options = list.getoptions();
+
+for(WebElement webelement :List)
+{
+String text = webelement.gettext();
+linkedset.add(text);
+}
+for(String string : text)
+{
+sop(String)
+}
+
+Remove Dupicate and arrage alphabets order
+
+TreeSet<String> ts= new Treeset<String>();
+
+for(WebElement webelement :list)
+{
+String text = webelement.gettext();
+Treeset.add(text)
+}
+For(String string : text)
+{
+sop(string);
+}
+
+print reverse Order
+
+for(int i=list.size-1;i>=0;i--)
+{
+    sal.selectbyindex(i);
+}
+
+----------------------------------------------------------------------
+
+Dynamic dropdown
+
+it which will be changed
+it is not used select tag
+if u using select class we will get unexpected tag name exception
+
+print all option in Dynamic dropdown
+WebElement searchbox = driver.findelement(By.()).sendkeys("---");
+
+List<WebElement> list = driver.findelements(by.(list xpath));
+
+for(Webelement webelement : list)
+{
+String text = webelement.gettext();
+sop(text);
+}
+
+
+select one options
+
+For(WebElement webelement :list)
+{
+String text = webelement.gettext();
+sop(text);
+if(text.equalignorecase("--")
+{
+webelement.click();
+sop("it is pass");
+break;
+}
+else
+{
+sop("it is fail");
+}
+
+select third options
+
+int position=0;
+for(WebElement webelement :list)
+{
+String text = Webelement.gettext();
+position ++;
+if(position==3)
+{
+webelement.click();
+break;
+}
+else
+{
+sop("it is fail");
+}
+
+select options
+
+for(WebElement webelement:list)
+{
+String text = webelement.gettext();
+if(text.contains("half name")
+{
+webelement.click();
+break;
+}
+else
+{
+sop("its not working")
+}
+
+------------------------------------------------------------------
+
+print all google links
+
+list<WebElement> list = driver.findelements(By.xpath(//a));
+for(webElement webelement :list)
+{
+sop(webelement.getAttribute("href")
+}
+
+print main links
+
+List<WebElement> main = driver.findelements(By.xpath());
+for(WebElement webelement :main)
+{
+sysout(webelement.gettext()):
+}
+
+----------------------------------------------------------------
+
+Actions and Robot class
+
+keybored and moouse actions perform by using 
+Actions and robot class
+
+Actions 
+
+Actions action = new action(driver);
+mouse handle action 
+moveToElement().build.perform
+
+singal click 
+contextclick().build.perform
+
+double click
+doubleclick().build.perform
+
+drag and drop
+
+dragAndDrop(from,To).build.perform
+
+    (or)
+
+action.clickAndHold(from).moveToElement(To).release(To).build.perform();
+
+
+Robot
+=====
+
+robot is spacial class in java 
+it's java awt package
+it's throw an exception of AWT Exception
+
+it has all the keywords in the keyboard
+which is stored in vituralkey in keyEvent class
+
+Robot robot = new Robot();
+robot.keypress(KeyEvent.vk_DOWN);
+robot.keyrelease(keyEvent.vk_DOWN);
+
+---------------------------------------------------------
+how to handle disabled elements
+
+the disabled element created by using attribute is disabled
+
+to Handle disabled element by using javascriptexecuter 
+
+normally we will handle we get exception
+
+javascriptexecutor executescript = (javascriptexecutor) driver;
+executescript.executescript("document.getelementbyId().value='mangar'");
+
+
+
+
+
+
+Pop-ups
+
+javascript pop-up created by using javascript AND pop-up
+
+pop-up handled by using abstruct methods of altert interface
+
+
+Alert alert = driver.switchTo().alert();
+alert.accept();
+alert.dismiss();
+alert.gettext();
+alert.sendkeys();
+
+
+how to handle brower window popup
+we will use chromeOptions class to handle the pop-up
+
+Chromeoptions options= new chromeoptions();
+option.addargument("--disable notification--");
+
+
+how to download file
+
+webElement download = driver.findelement(by.()).click();
+
+file file = new file ("download file location");
+file[] downloadfile = file.listfiles();
+for(file file:downloadfile)
+{
+if(file.getname().equalignorecase("download.xlx")
+{
+sop("file is there" or present);
+break;
+}
+
+upload file
+
+webElement upload = driver.findElement(by.()).click();
+
+
+String file = "window file loaction";
+stringSelection fileload = new StringSelection(file)
+Toolkit().getDefaultToolkit().getsystemclipboard.setcontents(fileload,Null);
+
+
+Robot robot = new Robot();
+robot.keypress(Keyevent.vk_Control);
+robot.keypress(keyevent.vk_v);
+robot.keyrelease(keyevent.vk_v);
+robot.keyrelease(Keyevent.vk_Control);
+robot.keypress(keyevent.vk_ENTER);
+robot.keyrelease(keyevent.vk_ENtER);
+
+
+how to handle authonitication pop-up
+
+webdriverwait wait = new webdriverwait(driver,10)
+
+Alert alert=wait.until(expectedcondition.alertpresent());
+
+alert.authonicateusing(new userANDpassword(<username><password>));
+
+
+
+driver.get("http://admin.admin1@url........");
+
+
+
+
+
+how to handle window
+
+window handle is nothing but sessionId 
+
+how to handle singal window
+String parantwindow = driver.getwindowhandle();
+
+how to handle multiple window
+
+set<String> childs = driver.getwindowhandles();
+
+how to close child window 
+
+set<string> childs = driver.getwindowhandles()
+sysout(childs.size());
+
+for(String allchildwindow : childs)
+{
+    String title =   driver.switchTo().window(allchildwindow).getTitle();
+       if(title.equals("------");
+       {
+          driver.close();
+          break;
+       }
+}
+
+close all window expect parent window
+
+set<string> allwindow = driver.getwindowhandls();
+sysout(allwindow.size);
+
+for(String allchild:allwindow)
+{
+
+   String title =    driver.swithTo().window(allchild).getTitle();
+
+     if(!title.equals(parant)
+{
+driver.close();
+}
+else
+{
+driver.manage().window().maximaix();
+}
+
+public connectiions
+
+class forname="Database Name";
+
+connection connection = devicemanager.getconnection("connectionDetails,portdetails");
+statement statement = connection.createstatement();
+  Resultset result =   statement.excutequrey("select * from emp");
+
+while(Result.next())
+{
+sysout(result.getstring(1),result.getstring(2)); 
+
+
+
+
+------------------------------------------------------------
+psvm()
+{
+fileinputstream fs = new fileinputstream(excelpath);
+workbook book = workbookfactory.create(fs);
+Sheet sheet = book.getsheet(sheet1);
+Row row =sheet.getRow(7);
+Cell cell =sheet.getcell(3);
+
+String value = cell.getstringcellvalue();
+sysout(value);
+
+
+
+DataDriven By using Excel Sheet
+
+pulbic string[][] getexcelsheet()
+{
+fileinputstream fs = new fileinputstream(excelsheetlocation);
+workbook workbook = workbookfactory.create(fs);
+sheet sheet = workbook.getsheet("MTSheet");
+int Rowcount = sheet.getrow();
+int cowcount = sheet.getcell();
+
+String testdata[][] = new String[rowcount-1][cowcount];
+
+for(int i=1;i<rowcount;i++)
+{
+for(int j=0;j<cowcount;j++)
+{
+testdata[i-1][j]= sheet.getcell(j,i).getcontent();
+}
+}
+
+return exceldata;
+
+
+@Test(dataprovider="logindata")
+public static void starting(String uname ,String pword)
+{
+system.setpropery());
+webDriver driver= new chromedriver();
+driver.get();
+WebElement username = driver.fE(by.());
+username.sendkeys(uname);
+WebElement password = driver.FE(By.());
+password.sendkeys(Pword);
+webElement login =driver.fE(BY());
+login.click(0;
+}
+
+@dataprovider name ="logindata"
+public string[] login()
+{
+data=getexcelsheet();
+return data;
+
+
+Using Apachi=POI
+
+Static List<String> Username=new ArrayList<String>();
+static List<String> password = new ArrayList<String>();
+
+public SuperSheet 
+{
+public void Excelsheet()
+{
+fileinputstream file= new fileinputstream(Excelpath);
+workbook book=workbook.xssfworkbook(file);
+sheet sheet=workbook.getsheet("MTsheet");
+iterator<row> rowcount = sheet.interator();
+while(rowcount.hasNext())
+{
+Row rowvalue = rowcount.Next();
+
+iterator<cell> cellcount =rowvalue Iterator();
+int i=2;
+while(cellcount.hasNext())
+{
+if(i%2==0)
+{
+Username.add(Cellcount.next().getstringvalue());
+}
+else
+Password.add(cellcount.next().getstringvalue());
+}
+i++;
+}
+}
+}
+
+public void property(String uname,String Pword)
+{
+system.setpropery();
+driver.get();
+WebElement username =driver.fE(BY());
+username.sendkeys(uname);
+WebElement password =driver.FE(by());
+password.sendkeys(Pword);
+WebElement login = driver.FE(By());
+login.click();
+
+public static forlooop()
+{
+for(int i=0;i<username.size;i++)
+{
+property(Username.get(i),password.get(i));
+}
+
+public static void main(String [] arg)
+{
+Supersheet sheet = new Supersheet();
+Sheet.Excelsheet();
+sysout("username : "+Username);
+sysout("password : "+password);
+Supersheet.forlooop();
+}
+}
+
+
+json ==============>
+
+psvm(string[] arg)
+{
+jsonparse parse = new jsonparse();
+filereader reader = new filereader("file location.json");
+Object translation = parse.parse(reader);
+ String name =(String)translation.get("name");
+ Long age =(Long)translation.get("age");
+ JsonArray array =(jsonArray)                                           
+
+
+ translation.get("special quvalitiys");
+
+sysout("name");
+sysout("age");
+
+while(iterator.hasNext())
+{
+sysout(iterator.Next());
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

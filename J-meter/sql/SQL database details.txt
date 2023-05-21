@@ -1,0 +1,13 @@
+MySQL database name:  	sathezdatabase
+
+MySQL username:  	affsatheesh123
+
+MySQL user password:  	timeover
+
+MySQL user password verification:  	timeover
+
+ 
+Email address:  	affsatheesh@gmail.com
+
+
+Email addresses of certain domains are not allowed!

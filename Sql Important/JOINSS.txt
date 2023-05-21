@@ -1,0 +1,1000 @@
+TURNER     KING       SALES          ACCOUNTING
+BLAKE      KING       SALES          ACCOUNTING
+MARTIN     KING       SALES          ACCOUNTING
+WARD       KING       SALES          ACCOUNTING
+ALLEN      KING       SALES          ACCOUNTING
+JAMES      TURNER     SALES          ACCOUNTING
+TURNER     TURNER     SALES          ACCOUNTING
+BLAKE      TURNER     SALES          ACCOUNTING
+MARTIN     TURNER     SALES          ACCOUNTING
+WARD       TURNER     SALES          ACCOUNTING
+ALLEN      TURNER     SALES          ACCOUNTING
+JAMES      ADAMS      SALES          ACCOUNTING
+TURNER     ADAMS      SALES          ACCOUNTING
+BLAKE      ADAMS      SALES          ACCOUNTING
+MARTIN     ADAMS      SALES          ACCOUNTING
+WARD       ADAMS      SALES          ACCOUNTING
+ALLEN      ADAMS      SALES          ACCOUNTING
+JAMES      JAMES      SALES          ACCOUNTING
+TURNER     JAMES      SALES          ACCOUNTING
+BLAKE      JAMES      SALES          ACCOUNTING
+MARTIN     JAMES      SALES          ACCOUNTING
+WARD       JAMES      SALES          ACCOUNTING
+ALLEN      JAMES      SALES          ACCOUNTING
+JAMES      FORD       SALES          ACCOUNTING
+TURNER     FORD       SALES          ACCOUNTING
+BLAKE      FORD       SALES          ACCOUNTING
+MARTIN     FORD       SALES          ACCOUNTING
+WARD       FORD       SALES          ACCOUNTING
+ALLEN      FORD       SALES          ACCOUNTING
+JAMES      MILLER     SALES          ACCOUNTING
+TURNER     MILLER     SALES          ACCOUNTING
+BLAKE      MILLER     SALES          ACCOUNTING
+MARTIN     MILLER     SALES          ACCOUNTING
+WARD       MILLER     SALES          ACCOUNTING
+ALLEN      MILLER     SALES          ACCOUNTING
+JAMES      SMITH      SALES          RESEARCH
+TURNER     SMITH      SALES          RESEARCH
+BLAKE      SMITH      SALES          RESEARCH
+MARTIN     SMITH      SALES          RESEARCH
+WARD       SMITH      SALES          RESEARCH
+ALLEN      SMITH      SALES          RESEARCH
+JAMES      ALLEN      SALES          RESEARCH
+TURNER     ALLEN      SALES          RESEARCH
+BLAKE      ALLEN      SALES          RESEARCH
+MARTIN     ALLEN      SALES          RESEARCH
+WARD       ALLEN      SALES          RESEARCH
+ALLEN      ALLEN      SALES          RESEARCH
+JAMES      WARD       SALES          RESEARCH
+TURNER     WARD       SALES          RESEARCH
+BLAKE      WARD       SALES          RESEARCH
+MARTIN     WARD       SALES          RESEARCH
+WARD       WARD       SALES          RESEARCH
+ALLEN      WARD       SALES          RESEARCH
+JAMES      JONES      SALES          RESEARCH
+TURNER     JONES      SALES          RESEARCH
+BLAKE      JONES      SALES          RESEARCH
+MARTIN     JONES      SALES          RESEARCH
+WARD       JONES      SALES          RESEARCH
+ALLEN      JONES      SALES          RESEARCH
+JAMES      MARTIN     SALES          RESEARCH
+TURNER     MARTIN     SALES          RESEARCH
+BLAKE      MARTIN     SALES          RESEARCH
+MARTIN     MARTIN     SALES          RESEARCH
+WARD       MARTIN     SALES          RESEARCH
+ALLEN      MARTIN     SALES          RESEARCH
+JAMES      BLAKE      SALES          RESEARCH
+TURNER     BLAKE      SALES          RESEARCH
+BLAKE      BLAKE      SALES          RESEARCH
+MARTIN     BLAKE      SALES          RESEARCH
+WARD       BLAKE      SALES          RESEARCH
+ALLEN      BLAKE      SALES          RESEARCH
+JAMES      CLARK      SALES          RESEARCH
+TURNER     CLARK      SALES          RESEARCH
+BLAKE      CLARK      SALES          RESEARCH
+MARTIN     CLARK      SALES          RESEARCH
+WARD       CLARK      SALES          RESEARCH
+ALLEN      CLARK      SALES          RESEARCH
+JAMES      SCOTT      SALES          RESEARCH
+TURNER     SCOTT      SALES          RESEARCH
+BLAKE      SCOTT      SALES          RESEARCH
+MARTIN     SCOTT      SALES          RESEARCH
+WARD       SCOTT      SALES          RESEARCH
+ALLEN      SCOTT      SALES          RESEARCH
+JAMES      KING       SALES          RESEARCH
+TURNER     KING       SALES          RESEARCH
+BLAKE      KING       SALES          RESEARCH
+MARTIN     KING       SALES          RESEARCH
+WARD       KING       SALES          RESEARCH
+ALLEN      KING       SALES          RESEARCH
+JAMES      TURNER     SALES          RESEARCH
+TURNER     TURNER     SALES          RESEARCH
+BLAKE      TURNER     SALES          RESEARCH
+MARTIN     TURNER     SALES          RESEARCH
+WARD       TURNER     SALES          RESEARCH
+ALLEN      TURNER     SALES          RESEARCH
+JAMES      ADAMS      SALES          RESEARCH
+TURNER     ADAMS      SALES          RESEARCH
+BLAKE      ADAMS      SALES          RESEARCH
+MARTIN     ADAMS      SALES          RESEARCH
+WARD       ADAMS      SALES          RESEARCH
+ALLEN      ADAMS      SALES          RESEARCH
+JAMES      JAMES      SALES          RESEARCH
+TURNER     JAMES      SALES          RESEARCH
+BLAKE      JAMES      SALES          RESEARCH
+MARTIN     JAMES      SALES          RESEARCH
+WARD       JAMES      SALES          RESEARCH
+ALLEN      JAMES      SALES          RESEARCH
+JAMES      FORD       SALES          RESEARCH
+TURNER     FORD       SALES          RESEARCH
+BLAKE      FORD       SALES          RESEARCH
+MARTIN     FORD       SALES          RESEARCH
+WARD       FORD       SALES          RESEARCH
+ALLEN      FORD       SALES          RESEARCH
+JAMES      MILLER     SALES          RESEARCH
+TURNER     MILLER     SALES          RESEARCH
+BLAKE      MILLER     SALES          RESEARCH
+MARTIN     MILLER     SALES          RESEARCH
+WARD       MILLER     SALES          RESEARCH
+ALLEN      MILLER     SALES          RESEARCH
+JAMES      SMITH      SALES          SALES
+TURNER     SMITH      SALES          SALES
+BLAKE      SMITH      SALES          SALES
+MARTIN     SMITH      SALES          SALES
+WARD       SMITH      SALES          SALES
+ALLEN      SMITH      SALES          SALES
+JAMES      ALLEN      SALES          SALES
+TURNER     ALLEN      SALES          SALES
+BLAKE      ALLEN      SALES          SALES
+MARTIN     ALLEN      SALES          SALES
+WARD       ALLEN      SALES          SALES
+ALLEN      ALLEN      SALES          SALES
+JAMES      WARD       SALES          SALES
+TURNER     WARD       SALES          SALES
+BLAKE      WARD       SALES          SALES
+MARTIN     WARD       SALES          SALES
+WARD       WARD       SALES          SALES
+ALLEN      WARD       SALES          SALES
+JAMES      JONES      SALES          SALES
+TURNER     JONES      SALES          SALES
+BLAKE      JONES      SALES          SALES
+MARTIN     JONES      SALES          SALES
+WARD       JONES      SALES          SALES
+ALLEN      JONES      SALES          SALES
+JAMES      MARTIN     SALES          SALES
+TURNER     MARTIN     SALES          SALES
+BLAKE      MARTIN     SALES          SALES
+MARTIN     MARTIN     SALES          SALES
+WARD       MARTIN     SALES          SALES
+ALLEN      MARTIN     SALES          SALES
+JAMES      BLAKE      SALES          SALES
+TURNER     BLAKE      SALES          SALES
+BLAKE      BLAKE      SALES          SALES
+MARTIN     BLAKE      SALES          SALES
+WARD       BLAKE      SALES          SALES
+ALLEN      BLAKE      SALES          SALES
+JAMES      CLARK      SALES          SALES
+TURNER     CLARK      SALES          SALES
+BLAKE      CLARK      SALES          SALES
+MARTIN     CLARK      SALES          SALES
+WARD       CLARK      SALES          SALES
+ALLEN      CLARK      SALES          SALES
+JAMES      SCOTT      SALES          SALES
+TURNER     SCOTT      SALES          SALES
+BLAKE      SCOTT      SALES          SALES
+MARTIN     SCOTT      SALES          SALES
+WARD       SCOTT      SALES          SALES
+ALLEN      SCOTT      SALES          SALES
+JAMES      KING       SALES          SALES
+TURNER     KING       SALES          SALES
+BLAKE      KING       SALES          SALES
+MARTIN     KING       SALES          SALES
+WARD       KING       SALES          SALES
+ALLEN      KING       SALES          SALES
+JAMES      TURNER     SALES          SALES
+TURNER     TURNER     SALES          SALES
+BLAKE      TURNER     SALES          SALES
+MARTIN     TURNER     SALES          SALES
+WARD       TURNER     SALES          SALES
+ALLEN      TURNER     SALES          SALES
+JAMES      ADAMS      SALES          SALES
+TURNER     ADAMS      SALES          SALES
+BLAKE      ADAMS      SALES          SALES
+MARTIN     ADAMS      SALES          SALES
+WARD       ADAMS      SALES          SALES
+ALLEN      ADAMS      SALES          SALES
+JAMES      JAMES      SALES          SALES
+TURNER     JAMES      SALES          SALES
+BLAKE      JAMES      SALES          SALES
+MARTIN     JAMES      SALES          SALES
+WARD       JAMES      SALES          SALES
+ALLEN      JAMES      SALES          SALES
+JAMES      FORD       SALES          SALES
+TURNER     FORD       SALES          SALES
+BLAKE      FORD       SALES          SALES
+MARTIN     FORD       SALES          SALES
+WARD       FORD       SALES          SALES
+ALLEN      FORD       SALES          SALES
+JAMES      MILLER     SALES          SALES
+TURNER     MILLER     SALES          SALES
+BLAKE      MILLER     SALES          SALES
+MARTIN     MILLER     SALES          SALES
+WARD       MILLER     SALES          SALES
+ALLEN      MILLER     SALES          SALES
+JAMES      SMITH      SALES          OPERATIONS
+TURNER     SMITH      SALES          OPERATIONS
+BLAKE      SMITH      SALES          OPERATIONS
+MARTIN     SMITH      SALES          OPERATIONS
+WARD       SMITH      SALES          OPERATIONS
+ALLEN      SMITH      SALES          OPERATIONS
+JAMES      ALLEN      SALES          OPERATIONS
+TURNER     ALLEN      SALES          OPERATIONS
+BLAKE      ALLEN      SALES          OPERATIONS
+MARTIN     ALLEN      SALES          OPERATIONS
+WARD       ALLEN      SALES          OPERATIONS
+ALLEN      ALLEN      SALES          OPERATIONS
+JAMES      WARD       SALES          OPERATIONS
+TURNER     WARD       SALES          OPERATIONS
+BLAKE      WARD       SALES          OPERATIONS
+MARTIN     WARD       SALES          OPERATIONS
+WARD       WARD       SALES          OPERATIONS
+ALLEN      WARD       SALES          OPERATIONS
+JAMES      JONES      SALES          OPERATIONS
+TURNER     JONES      SALES          OPERATIONS
+BLAKE      JONES      SALES          OPERATIONS
+MARTIN     JONES      SALES          OPERATIONS
+WARD       JONES      SALES          OPERATIONS
+ALLEN      JONES      SALES          OPERATIONS
+JAMES      MARTIN     SALES          OPERATIONS
+TURNER     MARTIN     SALES          OPERATIONS
+BLAKE      MARTIN     SALES          OPERATIONS
+MARTIN     MARTIN     SALES          OPERATIONS
+WARD       MARTIN     SALES          OPERATIONS
+ALLEN      MARTIN     SALES          OPERATIONS
+JAMES      BLAKE      SALES          OPERATIONS
+TURNER     BLAKE      SALES          OPERATIONS
+BLAKE      BLAKE      SALES          OPERATIONS
+MARTIN     BLAKE      SALES          OPERATIONS
+WARD       BLAKE      SALES          OPERATIONS
+ALLEN      BLAKE      SALES          OPERATIONS
+JAMES      CLARK      SALES          OPERATIONS
+TURNER     CLARK      SALES          OPERATIONS
+BLAKE      CLARK      SALES          OPERATIONS
+MARTIN     CLARK      SALES          OPERATIONS
+WARD       CLARK      SALES          OPERATIONS
+ALLEN      CLARK      SALES          OPERATIONS
+JAMES      SCOTT      SALES          OPERATIONS
+TURNER     SCOTT      SALES          OPERATIONS
+BLAKE      SCOTT      SALES          OPERATIONS
+MARTIN     SCOTT      SALES          OPERATIONS
+WARD       SCOTT      SALES          OPERATIONS
+ALLEN      SCOTT      SALES          OPERATIONS
+JAMES      KING       SALES          OPERATIONS
+TURNER     KING       SALES          OPERATIONS
+BLAKE      KING       SALES          OPERATIONS
+MARTIN     KING       SALES          OPERATIONS
+WARD       KING       SALES          OPERATIONS
+ALLEN      KING       SALES          OPERATIONS
+JAMES      TURNER     SALES          OPERATIONS
+TURNER     TURNER     SALES          OPERATIONS
+BLAKE      TURNER     SALES          OPERATIONS
+MARTIN     TURNER     SALES          OPERATIONS
+WARD       TURNER     SALES          OPERATIONS
+ALLEN      TURNER     SALES          OPERATIONS
+JAMES      ADAMS      SALES          OPERATIONS
+TURNER     ADAMS      SALES          OPERATIONS
+BLAKE      ADAMS      SALES          OPERATIONS
+MARTIN     ADAMS      SALES          OPERATIONS
+WARD       ADAMS      SALES          OPERATIONS
+ALLEN      ADAMS      SALES          OPERATIONS
+JAMES      JAMES      SALES          OPERATIONS
+TURNER     JAMES      SALES          OPERATIONS
+BLAKE      JAMES      SALES          OPERATIONS
+MARTIN     JAMES      SALES          OPERATIONS
+WARD       JAMES      SALES          OPERATIONS
+ALLEN      JAMES      SALES          OPERATIONS
+JAMES      FORD       SALES          OPERATIONS
+TURNER     FORD       SALES          OPERATIONS
+BLAKE      FORD       SALES          OPERATIONS
+MARTIN     FORD       SALES          OPERATIONS
+WARD       FORD       SALES          OPERATIONS
+ALLEN      FORD       SALES          OPERATIONS
+JAMES      MILLER     SALES          OPERATIONS
+TURNER     MILLER     SALES          OPERATIONS
+BLAKE      MILLER     SALES          OPERATIONS
+MARTIN     MILLER     SALES          OPERATIONS
+WARD       MILLER     SALES          OPERATIONS
+ALLEN      MILLER     SALES          OPERATIONS
+
+784 rows selected.
+
+SQL> 
+SQL> SELECT * FROM EMP
+  2  DEPT
+  3  WHERE EMP.DEPTNO(+)=DEPT.DEPTNO;
+WHERE EMP.DEPTNO(+)=DEPT.DEPTNO
+      *
+ERROR at line 3:
+ORA-00904: "EMP"."DEPTNO": invalid identifier
+
+
+SQL> ED
+Wrote file afiedt.buf
+
+  1  SELECT * FROM EMP,DEPT
+  2* WHERE EMP.DEPTNO(+)=DEPT.DEPTNO
+SQL> /
+
+     EMPNO ENAME      JOB              MGR HIREDATE         SAL       COMM     DEPTNO     DEPTNO DNAME          LOC
+---------- ---------- --------- ---------- --------- ---------- ---------- ---------- ---------- ---
+      7782 CLARK      MANAGER         7839 09-JUN-81       2450                    10         10 ACCOUNTING     NEW YORK
+      7839 KING       PRESIDENT            17-NOV-81       5000                    10         10 ACCOUNTING     NEW YORK
+      7934 MILLER     CLERK           7782 23-JAN-82       1300                    10         10 ACCOUNTING     NEW YORK
+      7566 JONES      MANAGER         7839 02-APR-81       2975                    20         20 RESEARCH       DALLAS
+      7902 FORD       ANALYST         7566 03-DEC-81       3000                    20         20 RESEARCH       DALLAS
+      7876 ADAMS      CLERK           7788 23-MAY-87       1100                    20         20 RESEARCH       DALLAS
+      7369 SMITH      CLERK           7902 17-DEC-80        800                    20         20 RESEARCH       DALLAS
+      7788 SCOTT      ANALYST         7566 19-APR-87       3000                    20         20 RESEARCH       DALLAS
+      7521 WARD       SALESMAN        7698 22-FEB-81       1250        500         30         30 SALES          CHICAGO
+      7844 TURNER     SALESMAN        7698 08-SEP-81       1500          0         30         30 SALES          CHICAGO
+      7499 ALLEN      SALESMAN        7698 20-FEB-81       1600        300         30         30 SALES          CHICAGO
+      7900 JAMES      CLERK           7698 03-DEC-81        950                    30         30 SALES          CHICAGO
+      7698 BLAKE      MANAGER         7839 01-MAY-81       2850                    30         30 SALES          CHICAGO
+      7654 MARTIN     SALESMAN        7698 28-SEP-81       1250       1400         30         30 SALES          CHICAGO
+                                                                                              40 OPERATIONS     BOSTON
+
+15 rows selected.
+
+SQL> ED
+Wrote file afiedt.buf
+
+  1  SELECT * FROM EMP,DEPT
+  2* WHERE EMP.DEPTNO=DEPT.DEPTNO(+)
+SQL> /
+
+     EMPNO ENAME      JOB              MGR HIREDATE         SAL       COMM     DEPTNO     DEPTNO DNAME          LOC
+---------- ---------- --------- ---------- --------- ---------- ---------- ---------- ---------- ---
+      7934 MILLER     CLERK           7782 23-JAN-82       1300                    10         10 ACCOUNTING     NEW YORK
+      7839 KING       PRESIDENT            17-NOV-81       5000                    10         10 ACCOUNTING     NEW YORK
+      7782 CLARK      MANAGER         7839 09-JUN-81       2450                    10         10 ACCOUNTING     NEW YORK
+      7902 FORD       ANALYST         7566 03-DEC-81       3000                    20         20 RESEARCH       DALLAS
+      7876 ADAMS      CLERK           7788 23-MAY-87       1100                    20         20 RESEARCH       DALLAS
+      7788 SCOTT      ANALYST         7566 19-APR-87       3000                    20         20 RESEARCH       DALLAS
+      7566 JONES      MANAGER         7839 02-APR-81       2975                    20         20 RESEARCH       DALLAS
+      7369 SMITH      CLERK           7902 17-DEC-80        800                    20         20 RESEARCH       DALLAS
+      7900 JAMES      CLERK           7698 03-DEC-81        950                    30         30 SALES          CHICAGO
+      7844 TURNER     SALESMAN        7698 08-SEP-81       1500          0         30         30 SALES          CHICAGO
+      7698 BLAKE      MANAGER         7839 01-MAY-81       2850                    30         30 SALES          CHICAGO
+      7654 MARTIN     SALESMAN        7698 28-SEP-81       1250       1400         30         30 SALES          CHICAGO
+      7521 WARD       SALESMAN        7698 22-FEB-81       1250        500         30         30 SALES          CHICAGO
+      7499 ALLEN      SALESMAN        7698 20-FEB-81       1600        300         30         30 SALES          CHICAGO
+
+14 rows selected.
+
+SQL> ED
+Wrote file afiedt.buf
+
+  1  SELECT * FROM EMP,DEPT
+  2* WHERE EMP.DEPTNO(+)=DEPT.DEPTNO(+)
+SQL> /
+WHERE EMP.DEPTNO(+)=DEPT.DEPTNO(+)
+                   *
+ERROR at line 2:
+ORA-01468: a predicate may reference only one outer-joined table
+
+
+SQL> ED
+Wrote file afiedt.buf
+
+  1  SELECT * FROM EMP FULL OUTER JOIN DEPT
+  2* ON EMP.DEPTNO=DEPT.DEPTNO
+SQL> /
+
+     EMPNO ENAME      JOB              MGR HIREDATE         SAL       COMM     DEPTNO     DEPTNO DNAME          LOC
+---------- ---------- --------- ---------- --------- ---------- ---------- ---------- ---------- ---
+      7934 MILLER     CLERK           7782 23-JAN-82       1300                    10         10 ACCOUNTING     NEW YORK
+      7839 KING       PRESIDENT            17-NOV-81       5000                    10         10 ACCOUNTING     NEW YORK
+      7782 CLARK      MANAGER         7839 09-JUN-81       2450                    10         10 ACCOUNTING     NEW YORK
+      7902 FORD       ANALYST         7566 03-DEC-81       3000                    20         20 RESEARCH       DALLAS
+      7876 ADAMS      CLERK           7788 23-MAY-87       1100                    20         20 RESEARCH       DALLAS
+      7788 SCOTT      ANALYST         7566 19-APR-87       3000                    20         20 RESEARCH       DALLAS
+      7566 JONES      MANAGER         7839 02-APR-81       2975                    20         20 RESEARCH       DALLAS
+      7369 SMITH      CLERK           7902 17-DEC-80        800                    20         20 RESEARCH       DALLAS
+      7900 JAMES      CLERK           7698 03-DEC-81        950                    30         30 SALES          CHICAGO
+      7844 TURNER     SALESMAN        7698 08-SEP-81       1500          0         30         30 SALES          CHICAGO
+      7698 BLAKE      MANAGER         7839 01-MAY-81       2850                    30         30 SALES          CHICAGO
+      7654 MARTIN     SALESMAN        7698 28-SEP-81       1250       1400         30         30 SALES          CHICAGO
+      7521 WARD       SALESMAN        7698 22-FEB-81       1250        500         30         30 SALES          CHICAGO
+      7499 ALLEN      SALESMAN        7698 20-FEB-81       1600        300         30         30 SALES          CHICAGO
+                                                                                              40 OPERATIONS     BOSTON
+
+15 rows selected.
+
+SQL> ED
+Wrote file afiedt.buf
+
+  1  SELECT * FROM EMP ,DEPT
+  2  WHERE EMP.DEPTNO=DEPT.DEPTNO
+  3* AND ENAME ='TURNER'
+SQL> /
+
+     EMPNO ENAME      JOB              MGR HIREDATE         SAL       COMM     DEPTNO     DEPTNO DNAME          LOC
+---------- ---------- --------- ---------- --------- ---------- ---------- ---------- ---------- ---
+      7844 TURNER     SALESMAN        7698 08-SEP-81       1500          0         30         30 SALES          CHICAGO
+
+SQL> ED
+Wrote file afiedt.buf
+
+  1  SELECT * FROM EMP ,DEPT
+  2  WHERE EMP.DEPTNO(+)=DEPT.DEPTNO
+  3* AND ENAME ='TURNER'
+SQL> /
+
+     EMPNO ENAME      JOB              MGR HIREDATE         SAL       COMM     DEPTNO     DEPTNO DNAME          LOC
+---------- ---------- --------- ---------- --------- ---------- ---------- ---------- ---------- ---
+      7844 TURNER     SALESMAN        7698 08-SEP-81       1500          0         30         30 SALES          CHICAGO
+
+SQL> ED
+Wrote file afiedt.buf
+
+  1  SELECT * FROM EMP ,DEPT
+  2  WHERE EMP.DEPTNO=DEPT.DEPTNO(+)
+  3* AND ENAME ='TURNER'
+SQL> /
+
+     EMPNO ENAME      JOB              MGR HIREDATE         SAL       COMM     DEPTNO     DEPTNO DNAME          LOC
+---------- ---------- --------- ---------- --------- ---------- ---------- ---------- ---------- ---
+      7844 TURNER     SALESMAN        7698 08-SEP-81       1500          0         30         30 SALES          CHICAGO
+
+SQL> CREATE TABEL USERNAME
+  2  
+SQL> 
+SQL> ED
+Wrote file afiedt.buf
+
+  1* CREATE TABEL LOGIN
+SQL> /
+CREATE TABEL LOGIN
+       *
+ERROR at line 1:
+ORA-00901: invalid CREATE command
+
+
+SQL> CREATE TABEL LOGIN
+  2  USERNAME  VARCHAR(250) 
+  3  PASSWORD  VARCHAR(20);
+CREATE TABEL LOGIN
+       *
+ERROR at line 1:
+ORA-00901: invalid CREATE command
+
+
+SQL> ED
+Wrote file afiedt.buf
+
+  1  CREATETABEL LOGIN
+  2  USERNAME  VARCHAR(250)
+  3* PASSWORD  VARCHAR(20)
+SQL> /
+CREATETABEL LOGIN
+*
+ERROR at line 1:
+ORA-00900: invalid SQL statement
+
+
+SQL> ED
+Wrote file afiedt.buf
+
+  1  create table LOGIN
+  2  USERNAME  VARCHAR(250)
+  3* PASSWORD  VARCHAR(20)
+SQL> /
+USERNAME  VARCHAR(250)
+*
+ERROR at line 2:
+ORA-00922: missing or invalid option
+
+
+SQL> create table Login
+  2  USERNAME  VARCHAR(250)
+  3  PASSWORD  VARCHAR(20);
+USERNAME  VARCHAR(250)
+*
+ERROR at line 2:
+ORA-00922: missing or invalid option
+
+
+SQL> ed
+Wrote file afiedt.buf
+
+  1  create table Login(
+  2  USERNAME  VARCHAR(255)
+  3* PASSWORD  VARCHAR(255))
+SQL> /
+PASSWORD  VARCHAR(255))
+*
+ERROR at line 3:
+ORA-00907: missing right parenthesis
+
+
+SQL> ed
+Wrote file afiedt.buf
+
+  1  create table Login(
+  2  USERNAME  VARCHAR(255),
+  3* PASSWORD  VARCHAR(255))
+SQL> /
+
+Table created.
+
+SQL> select * from login;
+
+no rows selected
+
+SQL> select login;
+select login
+           *
+ERROR at line 1:
+ORA-00923: FROM keyword not found where expected
+
+
+SQL> login;
+SP2-0042: unknown command "login" - rest of line ignored.
+SQL> insert into login(
+  2  username,password)value(sathezsk,timeover)
+  3  ;
+username,password)value(sathezsk,timeover)
+                  *
+ERROR at line 2:
+ORA-00926: missing VALUES keyword
+
+
+SQL> ed
+Wrote file afiedt.buf
+
+  1  insert into login(
+  2* username,password)values(sathezsk,timeover)
+  3  /
+username,password)values(sathezsk,timeover)
+                                  *
+ERROR at line 2:
+ORA-00984: column not allowed here
+
+
+SQL> ed
+Wrote file afiedt.buf
+
+  1* Insert into login(username,password)values(sathezsk,timeover)
+SQL> /
+Insert into login(username,password)values(sathezsk,timeover)
+                                                    *
+ERROR at line 1:
+ORA-00984: column not allowed here
+
+
+SQL> ed
+Wrote file afiedt.buf
+
+  1* Insert into login(username,password)values('sathezsk','timeover')
+SQL> /
+
+1 row created.
+
+SQL> select * from login;
+
+USERNAME                                                                                                                        
+----------------------------------------------------------------------------------------------------
+sathezsk                                                                                                                        
+
+SQL> 
+SQL> ed
+Wrote file afiedt.buf
+
+  1* select * from login
+SQL> create tabel Login(
+  2  Username varchar(255),
+  3  Password varchar(255),
+  4  Pin varchar(255));
+create tabel Login(
+       *
+ERROR at line 1:
+ORA-00901: invalid CREATE command
+
+
+SQL> ed
+Wrote file afiedt.buf
+
+  1  create table Login(
+  2  Username varchar(255),
+  3  Password varchar(255),
+  4* Pin varchar(255))
+SQL> /
+create table Login(
+             *
+ERROR at line 1:
+ORA-00955: name is already used by an existing object
+
+
+SQL> Alter table login  add
+  2  (Password varchar(255));
+(Password varchar(255))
+ *
+ERROR at line 2:
+ORA-01430: column being added already exists in table
+
+
+SQL> trancat table login;
+SP2-0734: unknown command beginning "trancat ta..." - rest of line ignored.
+SQL> trancat ta login;
+SP2-0734: unknown command beginning "trancat ta..." - rest of line ignored.
+SQL> Trancattable login;
+SP2-0734: unknown command beginning "Trancattab..." - rest of line ignored.
+SQL> truncate table login;
+
+Table truncated.
+
+SQL> select * from login;
+
+no rows selected
+
+SQL> create table Login(
+  2  Username varchar(255),
+  3  Password varchar(255),
+  4  Pin varchar(255));
+create table Login(
+             *
+ERROR at line 1:
+ORA-00955: name is already used by an existing object
+
+
+SQL> show recyclepin;
+SP2-0158: unknown SHOW option "recyclepin"
+SQL> SHOW RECYCLEBIN;
+SQL> create table Login(
+  2  Username varchar(255),
+  3  Password varchar(255),
+  4  Pin varchar(255));
+create table Login(
+             *
+ERROR at line 1:
+ORA-00955: name is already used by an existing object
+
+
+SQL> ED
+Wrote file afiedt.buf
+
+  1  create table FACEBOOK (
+  2  Username varchar(255),
+  3  Password varchar(255),
+  4* Pin varchar(255))
+SQL> /
+
+Table created.
+
+SQL> SELECT * FROM FACEBOOK;
+
+no rows selected
+
+SQL> INSERT INTO FACEBOOK VALUES('SATHEZSK','TIMEOVER','DGL')
+  2  INSERT INTO FACEBOOK VALUES('SATHEZ','WORLDEND','MDU');
+INSERT INTO FACEBOOK VALUES('SATHEZ','WORLDEND','MDU')
+*
+ERROR at line 2:
+ORA-00933: SQL command not properly ended
+
+
+SQL> ED
+Wrote file afiedt.buf
+
+  1  INSERT INTO FACEBOOK(USERNAME,PASSWORD,PIN)VALUES('SATHEZSK','TIMEOVER','DGL')
+  2* INSERT INTO FACEBOOK(USERNAME,PASSWORD,PIN)VALUES('SATHEZ','WORLDEND','MDU')
+SQL> /
+INSERT INTO FACEBOOK(USERNAME,PASSWORD,PIN)VALUES('SATHEZ','WORLDEND','MDU')
+*
+ERROR at line 2:
+ORA-00933: SQL command not properly ended
+
+
+SQL> ED
+Wrote file afiedt.buf
+
+  1  INSERT INTO FACEBOOK(USERNAME,PASSWORD,PIN)VALUES('SATHEZSK','TIMEOVER','DGL')
+  2* INSERT INTO FACEBOOK(USERNAME,PASSWORD,PIN)VALUES('SATHEZ','WORLDEND','MDU')
+SQL> INSERT INTO FACEBOOK(USERNAME,PASSWORD,PIN)VALUES('SATHEZSK','TIMEOVER','DGL')
+  2  INSERT INTO FACEBOOK(USERNAME,PASSWORD,PIN)VALUES('SATHEZ','WORLDEND','MDU')
+  3  
+SQL> 
+SQL> INSERT INTO FACEBOOK(USERNAME,PASSWORD,PIN)VALUES('SATHEZSK','TIMEOVER','DGL')
+  2  INSERT INTO FACEBOOK(USERNAME,PASSWORD,PIN)VALUES('SATHEZ','WORLDEND','MDU')
+  3  
+SQL> INSERT INTO FACEBOOK(USERNAME,PASSWORD,PIN)VALUES('SATHEZSK','TIMEOVER','DGL')
+  2  INSERT INTO FACEBOOK(USERNAME,PASSWORD,PIN)VALUES('SATHEZ','WORLDEND','MDU')
+  3  ;
+INSERT INTO FACEBOOK(USERNAME,PASSWORD,PIN)VALUES('SATHEZ','WORLDEND','MDU')
+*
+ERROR at line 2:
+ORA-00933: SQL command not properly ended
+
+
+SQL> ED
+Wrote file afiedt.buf
+
+  1  Insert INTO FACEBOOK(USERNAME,PASSWORD,PIN)VALUES('SATHEZSK','TIMEOVER','DGL')
+  2* Insert INTO FACEBOOK(USERNAME,PASSWORD,PIN)VALUES('SATHEZ','WORLDEND','MDU')
+  3  /
+Insert INTO FACEBOOK(USERNAME,PASSWORD,PIN)VALUES('SATHEZ','WORLDEND','MDU')
+*
+ERROR at line 2:
+ORA-00933: SQL command not properly ended
+
+
+SQL> Insert into login(username,password)values('sathezsk','timeover')
+  2  
+SQL> ed
+Wrote file afiedt.buf
+
+  1* Insert into FACEBOOK(username,password)values('sathezsk','timeover')
+SQL> //
+
+1 row created.
+
+SQL> SELECT * FROM FACEBOOK;
+
+USERNAME                                                                                                                        
+----------------------------------------------------------------------------------------------------
+sathezsk                                                                                                                        
+
+SQL> SELECT USERNAME FROM FACEBOOK;
+
+USERNAME
+----------------------------------------------------------------------------------------------------
+sathezsk
+
+SQL> Insert into FACEBOOK(username,password)values('sathez','worldend');
+
+1 row created.
+
+SQL> select * from facebook;
+
+USERNAME                                                                                                                        
+----------------------------------------------------------------------------------------------------
+sathezsk                                                                                                                        
+sathez                                                                                                                          
+
+SQL> 
+SQL> Truncate table login;
+
+Table truncated.
+
+SQL> truncate table facebook;
+
+Table truncated.
+
+SQL> select * from facebook;
+
+no rows selected
+
+SQL> select * from face;
+select * from face
+              *
+ERROR at line 1:
+ORA-00942: table or view does not exist
+
+
+SQL> rename table Login;
+rename table Login
+       *
+ERROR at line 1:
+ORA-00903: invalid table name
+
+
+SQL> rename login Login;
+rename login Login
+             *
+ERROR at line 1:
+ORA-00946: missing TO keyword
+
+
+SQL> set pagesize 800
+SQL> set linesize 800;
+SQL> select * from facebook;
+
+no rows selected
+
+SQL> create table FACEBOOK (
+  2  Username varchar(255),
+  3  Password varchar(255));
+create table FACEBOOK (
+             *
+ERROR at line 1:
+ORA-00955: name is already used by an existing object
+
+
+SQL> ed
+Wrote file afiedt.buf
+
+  1  create table Book (
+  2  Username varchar(255),
+  3* Password varchar(255))
+SQL> /
+
+Table created.
+
+SQL> select * from 
+  2  book;
+
+no rows selected
+
+SQL> ed
+Wrote file afiedt.buf
+
+  1  select * from
+  2* book
+SQL> Insert into FACEBOOK(username,password)values('sathez','worldend');
+
+1 row created.
+
+SQL> ed
+Wrote file afiedt.buf
+
+  1  Insert into BOOK(username,password)values('sathez','worldover')
+  2  Insert into BOOK(username,password)values('sathezsk','timeover')
+  3* Insert into BOOK(username,password)values('affsatheeh','world')
+SQL> /
+Insert into BOOK(username,password)values('sathezsk','timeover')
+*
+ERROR at line 2:
+ORA-00933: SQL command not properly ended
+
+
+SQL> ed
+Wrote file afiedt.buf
+
+  1  Insert into BOOK(username,password)values('sathez','worldover'),
+  2  Insert into BOOK(username,password)values('sathezsk','timeover'),
+  3* Insert into BOOK(username,password)values('affsatheeh','world')
+SQL> /
+Insert into BOOK(username,password)values('sathez','worldover'),
+                                                               *
+ERROR at line 1:
+ORA-00933: SQL command not properly ended
+
+
+SQL> ed
+Wrote file afiedt.buf
+
+  1  Insert into BOOK(username,password)values('sathez','worldover'),
+  2  Insert into BOOK(username,password)values('sathezsk','timeover'),
+  3* Insert into BOOK(username,password)values('affsatheeh','world')
+SQL> 
+SQL> 
+SQL> 
+SQL> 
+SQL> Insert into BOOK(username,password)values('sathez','worldover')
+  2  Insert into BOOK(username,password)values('sathezsk','timeover')
+  3  Insert into BOOK(username,password)values('affsatheeh','world');
+Insert into BOOK(username,password)values('sathezsk','timeover')
+*
+ERROR at line 2:
+ORA-00933: SQL command not properly ended
+
+
+SQL> Insert into BOOK values('sathez','worldover')
+  2  Insert into BOOK values('sathezsk','timeover')
+  3  Insert into BOOK values('affsatheeh','world');
+Insert into BOOK values('sathezsk','timeover')
+*
+ERROR at line 2:
+ORA-00933: SQL command not properly ended
+
+
+SQL> drop table login;
+
+Table dropped.
+
+SQL> drop table facebook;
+
+Table dropped.
+
+SQL> drop tabel book;
+drop tabel book
+     *
+ERROR at line 1:
+ORA-00950: invalid DROP option
+
+
+SQL> select * from login;
+select * from login
+              *
+ERROR at line 1:
+ORA-00942: table or view does not exist
+
+
+SQL> drop table book;
+
+Table dropped.
+
+SQL> truncate table book;
+truncate table book
+               *
+ERROR at line 1:
+ORA-00942: table or view does not exist
+
+
+SQL> create table Login(
+  2  Username varchar(255),
+  3  password varcar(255));
+password varcar(255))
+               *
+ERROR at line 3:
+ORA-00907: missing right parenthesis
+
+
+SQL> create table Login(
+  2  Username varchar(255),
+  3  password varchar(255));
+
+Table created.
+
+SQL> select * from login;
+
+no rows selected
+
+SQL> insert into login values('sathezsk','timeover')
+  2  insert into login values('sathez',worldover');
+ERROR:
+ORA-01756: quoted string not properly terminated
+
+
+SQL> insert into login values('sathezsk','timeover')
+  2  insert into login values('sathez','worldover');
+insert into login values('sathez','worldover')
+*
+ERROR at line 2:
+ORA-00933: SQL command not properly ended
+
+
+SQL> Insert into login values('sathezsk','timeover')
+  2  Insert into login values('sathez','world');
+Insert into login values('sathez','world')
+*
+ERROR at line 2:
+ORA-00933: SQL command not properly ended
+
+
+SQL>  insert into login values(('sathezsk','timeover')
+  2   insert into login values('sathez','worldover'));
+ insert into login values(('sathezsk','timeover')
+                                     *
+ERROR at line 1:
+ORA-00907: missing right parenthesis
+
+
+SQL>  Insert all into login values('sathezsk','timeover')
+  2   Insert all into login values('sathez','worldover');
+ Insert all into login values('sathez','worldover')
+ *
+ERROR at line 2:
+ORA-00928: missing SELECT keyword
+
+
+SQL> Insert all into Login(username,password)values('sathez','worldover');
+Insert all into Login(username,password)values('sathez','worldover')
+                                                                   *
+ERROR at line 1:
+ORA-00928: missing SELECT keyword
+
+
+SQL> Insert all into Login(username,password)values('sathez','worldover');
+Insert all into Login(username,password)values('sathez','worldover')
+                                                                   *
+ERROR at line 1:
+ORA-00928: missing SELECT keyword
+
+
+SQL> Insert all into Login(username,password)values('sathez','world')
+  2  Insert all into Login(username,password)values('sathez','worldover');
+Insert all into Login(username,password)values('sathez','worldover')
+*
+ERROR at line 2:
+ORA-00928: missing SELECT keyword
+
+
+SQL> Insert all into Login(username,password)values('sathez','worldover');
+Insert all into Login(username,password)values('sathez','worldover')
+                                                                   *
+ERROR at line 1:
+ORA-00928: missing SELECT keyword
+
+
+SQL> 
+SQL> 
+SQL> 
+SQL> Insert all into Login(username,password)values('sathez','worldover');
+Insert all into Login(username,password)values('sathez','worldover')
+                                                                   *
+ERROR at line 1:
+ORA-00928: missing SELECT keyword
+
+
+SQL> 

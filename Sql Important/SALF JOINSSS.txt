@@ -1,0 +1,20 @@
+salf joins na 
+namma 
+1 Line =>  select e.ename ,m.ename,d.dname,dm.dname,s.salgrade from emp e,emp m,dept d,dept dm,salgrade s;
+2 Line =>  where e.mgr = em.empno
+3 Line =>  and d.deptno=d.deptno
+4 Line =>  and m.deptno=dm.deptno
+5 Line =>  and e.sal between s.losal and hisal;
+
+1.epati kutukurapa ore mathiri rentu table blackgroundla 
+  create aerum
+
+2.where la namma kututhuruka rentukum relationship erukanum
+  apo than ethu work akum .
+  epo namma kututhurukathu yentha emplyku yar managernu details 
+  varum
+
+3. 3Line la erukathu rentu table la erukathaoum compare pani 
+   rentaoum atukum
+
+5.salgrade oum compare pani 1st 2nd third kontu varum

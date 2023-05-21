@@ -1,0 +1,554 @@
+SQL*Plus: Release 10.2.0.3.0 - Production on Tue Jun 30 02:57:01 2020
+
+Copyright (c) 1982, 2006, Oracle.  All Rights Reserved.
+
+
+Connected to:
+Oracle Database 10g Enterprise Edition Release 10.2.0.3.0 - Production
+With the Partitioning, OLAP and Data Mining options
+
+SQL> drop table sz;
+
+Table dropped.
+
+SQL> create table sz(name varchar(20),password varchar(20),pin int(10));
+create table sz(name varchar(20),password varchar(20),pin int(10))
+                                                             *
+ERROR at line 1:
+ORA-00907: missing right parenthesis
+
+
+SQL> create table sz(name varchar(20),password varchar(20),pin number(10));
+
+Table created.
+
+SQL> insert into sz values('sathez','sz',1204);
+
+1 row created.
+
+SQL> select * from sz;
+
+NAME                 PASSWORD                    PIN
+-------------------- -------------------- ----------
+sathez               sz                         1204
+
+SQL> insert all into sz value('sathezsk','timeover',1111);
+insert all into sz value('sathezsk','timeover',1111)
+                   *
+ERROR at line 1:
+ORA-00928: missing SELECT keyword
+
+
+SQL>  insert all into sz values('sathezsk','timeover',1111);
+ insert all into sz values('sathezsk','timeover',1111)
+                                                     *
+ERROR at line 1:
+ORA-00928: missing SELECT keyword
+
+
+SQL> insert into sz values('sathezsk','timeover',111);
+
+1 row created.
+
+SQL> select * from sz;
+
+NAME                 PASSWORD                    PIN
+-------------------- -------------------- ----------
+sathez               sz                         1204
+sathezsk             timeover                    111
+
+SQL> insert into sz values('sathezsk','world',1211)
+  2  insert into sz values('satheesh','team',1245);
+insert into sz values('satheesh','team',1245)
+*
+ERROR at line 2:
+ORA-00933: SQL command not properly ended
+
+
+SQL> insert all into sz values('sathezsk','world',1211)
+  2  insert all into sz values('satheesh','team',1245);
+insert all into sz values('satheesh','team',1245)
+*
+ERROR at line 2:
+ORA-00928: missing SELECT keyword
+
+
+SQL> insert all into sz values('sathezsk','world',1211),
+  2  into sz values('satheesh','team',1245);
+insert all into sz values('sathezsk','world',1211),
+                                                  *
+ERROR at line 1:
+ORA-00928: missing SELECT keyword
+
+
+SQL> 
+SQL> insert all 
+  2  into sz values('sathezsk','world',1211)
+  3  into sz values('satheesh','team',1245)
+  4  into sz values('affsatheesh','teamover',1435);
+into sz values('affsatheesh','teamover',1435)
+                                            *
+ERROR at line 4:
+ORA-00928: missing SELECT keyword
+
+
+SQL> insert all 
+  2  into sz values('sathezsk','world',1211)
+  3  into sz values('satheesh','team',1245)
+  4  into sz values('affsatheesh','teamover',1435);
+into sz values('affsatheesh','teamover',1435)
+                                            *
+ERROR at line 4:
+ORA-00928: missing SELECT keyword
+
+
+SQL> insert all 
+  2  into sz values('sathezsk','world',1211)
+  3  into sz values('satheesh','team',1245)
+  4  into sz values('affsatheesh','teamover',1435)
+  5  select * from dual;
+
+3 rows created.
+
+SQL> select * from sz;
+
+NAME                 PASSWORD                    PIN
+-------------------- -------------------- ----------
+sathez               sz                         1204
+sathezsk             timeover                    111
+sathezsk             world                      1211
+satheesh             team                       1245
+affsatheesh          teamover                   1435
+
+SQL> alter table sz add
+  2  practice varchar(20);
+
+Table altered.
+
+SQL> select * from sz;
+
+NAME                 PASSWORD                    PIN PRACTICE
+-------------------- -------------------- ---------- --------------------
+sathez               sz                         1204
+sathezsk             timeover                    111
+sathezsk             world                      1211
+satheesh             team                       1245
+affsatheesh          teamover                   1435
+
+SQL> alter table sz modidy
+  2           practice number(10);
+alter table sz modidy
+               *
+ERROR at line 1:
+ORA-01735: invalid ALTER TABLE option
+
+
+SQL> alter table sz modify
+  2           practice number(10);
+
+Table altered.
+
+SQL> desc sz;
+ Name                                      Null?    Type
+ ----------------------------------------- -------- ----------------------------
+ NAME                                               VARCHAR2(20)
+ PASSWORD                                           VARCHAR2(20)
+ PIN                                                NUMBER(10)
+ PRACTICE                                           NUMBER(10)
+
+SQL> alter table sz rename
+  2  column practice to dailypractic;
+
+Table altered.
+
+SQL> select * from sz;
+
+NAME                 PASSWORD                    PIN DAILYPRACTIC
+-------------------- -------------------- ---------- ------------
+sathez               sz                         1204
+sathezsk             timeover                    111
+sathezsk             world                      1211
+satheesh             team                       1245
+affsatheesh          teamover                   1435
+
+SQL> select * from tab;
+
+TNAME                          TABTYPE  CLUSTERID
+------------------------------ ------- ----------
+BIN$6wISk4WwS02l/4xyKzAzGQ==$0 TABLE
+BIN$qwBaGGPpT2Wj0SycD/mWYA==$0 TABLE
+FACEBOOK                       TABLE
+BIN$vWX3F2rcSnWlrTDoYuxRWw==$0 TABLE
+LOGIN                          TABLE
+BIN$8VMfoptQREeaMEeLOhSq8w==$0 TABLE
+SZ                             TABLE
+DEPT                           TABLE
+EMP                            TABLE
+BONUS                          TABLE
+SALGRADE                       TABLE
+
+TNAME                          TABTYPE  CLUSTERID
+------------------------------ ------- ----------
+BIN$TvGI4462RSuhY6br1wWoHA==$0 TABLE
+BIN$lcCohdVGSSWb77+pdAvcIA==$0 TABLE
+
+13 rows selected.
+
+SQL> rename sz sathezsk;
+rename sz sathezsk
+          *
+ERROR at line 1:
+ORA-00946: missing TO keyword
+
+
+SQL> Rename sz sathez;
+Rename sz sathez
+          *
+ERROR at line 1:
+ORA-00946: missing TO keyword
+
+
+SQL> rename table sz to sathez;
+rename table sz to sathez
+       *
+ERROR at line 1:
+ORA-00903: invalid table name
+
+
+SQL> rename sz to sathez;
+
+Table renamed.
+
+SQL> select * from sathez;
+
+NAME                 PASSWORD                    PIN DAILYPRACTIC
+-------------------- -------------------- ---------- ------------
+sathez               sz                         1204
+sathezsk             timeover                    111
+sathezsk             world                      1211
+satheesh             team                       1245
+affsatheesh          teamover                   1435
+
+SQL> rename sathez to sz;
+
+Table renamed.
+
+SQL> create table copys as select * from emp
+  2  
+SQL> create table copys as select ename from emp;
+
+Table created.
+
+SQL> select * from copys
+  2  ;
+
+ENAME
+----------
+SMITH
+ALLEN
+WARD
+JONES
+MARTIN
+BLAKE
+CLARK
+SCOTT
+KING
+TURNER
+ADAMS
+
+ENAME
+----------
+JAMES
+FORD
+MILLER
+
+14 rows selected.
+
+SQL> Show recyclebin;
+ORIGINAL NAME    RECYCLEBIN NAME                OBJECT TYPE  DROP TIME
+---------------- ------------------------------ ------------ -------------------
+BOOK             BIN$6wISk4WwS02l/4xyKzAzGQ==$0 TABLE        2020-06-30:00:48:01
+FACEBOOK         BIN$TvGI4462RSuhY6br1wWoHA==$0 TABLE        2020-06-30:00:47:23
+LOGIN            BIN$vWX3F2rcSnWlrTDoYuxRWw==$0 TABLE        2020-06-30:02:30:40
+LOGIN            BIN$lcCohdVGSSWb77+pdAvcIA==$0 TABLE        2020-06-30:00:47:13
+SZ               BIN$qwBaGGPpT2Wj0SycD/mWYA==$0 TABLE        2020-06-30:02:57:11
+SZ               BIN$8VMfoptQREeaMEeLOhSq8w==$0 TABLE        2020-06-30:02:46:05
+SQL> flashback table Book to befour drop;
+flashback table Book to befour drop
+                        *
+ERROR at line 1:
+ORA-00905: missing keyword
+
+
+SQL> flashback table Book to before drop;
+
+Flashback complete.
+
+SQL> select * from Book;
+
+no rows selected
+
+SQL> Show recyclebin;
+ORIGINAL NAME    RECYCLEBIN NAME                OBJECT TYPE  DROP TIME
+---------------- ------------------------------ ------------ -------------------
+FACEBOOK         BIN$TvGI4462RSuhY6br1wWoHA==$0 TABLE        2020-06-30:00:47:23
+LOGIN            BIN$vWX3F2rcSnWlrTDoYuxRWw==$0 TABLE        2020-06-30:02:30:40
+LOGIN            BIN$lcCohdVGSSWb77+pdAvcIA==$0 TABLE        2020-06-30:00:47:13
+SZ               BIN$qwBaGGPpT2Wj0SycD/mWYA==$0 TABLE        2020-06-30:02:57:11
+SZ               BIN$8VMfoptQREeaMEeLOhSq8w==$0 TABLE        2020-06-30:02:46:05
+SQL> purge table Login
+  2  purge recyclebin;
+purge recyclebin
+*
+ERROR at line 2:
+ORA-00933: SQL command not properly ended
+
+
+SQL> purge table Login to purge recyclebin;
+purge table Login to purge recyclebin
+                  *
+ERROR at line 1:
+ORA-00933: SQL command not properly ended
+
+
+SQL> Purge table login purge recyclebin;
+Purge table login purge recyclebin
+                  *
+ERROR at line 1:
+ORA-00933: SQL command not properly ended
+
+
+SQL> purge table login;
+
+Table purged.
+
+SQL> show recyclebin;
+ORIGINAL NAME    RECYCLEBIN NAME                OBJECT TYPE  DROP TIME
+---------------- ------------------------------ ------------ -------------------
+FACEBOOK         BIN$TvGI4462RSuhY6br1wWoHA==$0 TABLE        2020-06-30:00:47:23
+LOGIN            BIN$vWX3F2rcSnWlrTDoYuxRWw==$0 TABLE        2020-06-30:02:30:40
+SZ               BIN$qwBaGGPpT2Wj0SycD/mWYA==$0 TABLE        2020-06-30:02:57:11
+SZ               BIN$8VMfoptQREeaMEeLOhSq8w==$0 TABLE        2020-06-30:02:46:05
+SQL> update sz
+  2  set 
+  3  
+SQL> select * from sz;
+
+NAME                 PASSWORD                    PIN DAILYPRACTIC
+-------------------- -------------------- ---------- ------------
+sathez               sz                         1204
+sathezsk             timeover                    111
+sathezsk             world                      1211
+satheesh             team                       1245
+affsatheesh          teamover                   1435
+
+SQL> update sz
+  2  set name = ownername
+  3  where name = 'sathezsk';
+set name = ownername
+           *
+ERROR at line 2:
+ORA-00904: "OWNERNAME": invalid identifier
+
+
+SQL> update sz
+  2  set sathezsk=aff;
+set sathezsk=aff
+             *
+ERROR at line 2:
+ORA-00904: "AFF": invalid identifier
+
+
+SQL> update sz
+  2  set sathezsk='aff';
+set sathezsk='aff'
+    *
+ERROR at line 2:
+ORA-00904: "SATHEZSK": invalid identifier
+
+
+SQL> update sz
+  2  set Name='aff'
+  3  where name ='sat';
+
+0 rows updated.
+
+SQL> select * from sz;
+
+NAME                 PASSWORD                    PIN DAILYPRACTIC
+-------------------- -------------------- ---------- ------------
+sathez               sz                         1204
+sathezsk             timeover                    111
+sathezsk             world                      1211
+satheesh             team                       1245
+affsatheesh          teamover                   1435
+
+SQL> update sz set Name='aff' where Name ='sathezsk';
+
+2 rows updated.
+
+SQL> select *  from sz;
+
+NAME                 PASSWORD                    PIN DAILYPRACTIC
+-------------------- -------------------- ---------- ------------
+sathez               sz                         1204
+aff                  timeover                    111
+aff                  world                      1211
+satheesh             team                       1245
+affsatheesh          teamover                   1435
+
+SQL> delete sz where name='aff';
+
+2 rows deleted.
+
+SQL> select * from emp;
+
+     EMPNO ENAME      JOB              MGR HIREDATE         SAL       COMM
+---------- ---------- --------- ---------- --------- ---------- ----------
+    DEPTNO
+----------
+      7369 SMITH      CLERK           7902 17-DEC-80        800
+        20
+
+      7499 ALLEN      SALESMAN        7698 20-FEB-81       1600        300
+        30
+
+      7521 WARD       SALESMAN        7698 22-FEB-81       1250        500
+        30
+
+
+     EMPNO ENAME      JOB              MGR HIREDATE         SAL       COMM
+---------- ---------- --------- ---------- --------- ---------- ----------
+    DEPTNO
+----------
+      7566 JONES      MANAGER         7839 02-APR-81       2975
+        20
+
+      7654 MARTIN     SALESMAN        7698 28-SEP-81       1250       1400
+        30
+
+      7698 BLAKE      MANAGER         7839 01-MAY-81       2850
+        30
+
+
+     EMPNO ENAME      JOB              MGR HIREDATE         SAL       COMM
+---------- ---------- --------- ---------- --------- ---------- ----------
+    DEPTNO
+----------
+      7782 CLARK      MANAGER         7839 09-JUN-81       2450
+        10
+
+      7788 SCOTT      ANALYST         7566 19-APR-87       3000
+        20
+
+      7839 KING       PRESIDENT            17-NOV-81       5000
+        10
+
+
+     EMPNO ENAME      JOB              MGR HIREDATE         SAL       COMM
+---------- ---------- --------- ---------- --------- ---------- ----------
+    DEPTNO
+----------
+      7844 TURNER     SALESMAN        7698 08-SEP-81       1500          0
+        30
+
+      7876 ADAMS      CLERK           7788 23-MAY-87       1100
+        20
+
+      7900 JAMES      CLERK           7698 03-DEC-81        950
+        30
+
+
+     EMPNO ENAME      JOB              MGR HIREDATE         SAL       COMM
+---------- ---------- --------- ---------- --------- ---------- ----------
+    DEPTNO
+----------
+      7902 FORD       ANALYST         7566 03-DEC-81       3000
+        20
+
+      7934 MILLER     CLERK           7782 23-JAN-82       1300
+        10
+
+
+14 rows selected.
+
+SQL> select * from sz;
+
+NAME                 PASSWORD                    PIN DAILYPRACTIC
+-------------------- -------------------- ---------- ------------
+sathez               sz                         1204
+satheesh             team                       1245
+affsatheesh          teamover                   1435
+
+SQL> Show recyclebin;
+ORIGINAL NAME    RECYCLEBIN NAME                OBJECT TYPE  DROP TIME
+---------------- ------------------------------ ------------ -------------------
+FACEBOOK         BIN$TvGI4462RSuhY6br1wWoHA==$0 TABLE        2020-06-30:00:47:23
+LOGIN            BIN$vWX3F2rcSnWlrTDoYuxRWw==$0 TABLE        2020-06-30:02:30:40
+SZ               BIN$qwBaGGPpT2Wj0SycD/mWYA==$0 TABLE        2020-06-30:02:57:11
+SZ               BIN$8VMfoptQREeaMEeLOhSq8w==$0 TABLE        2020-06-30:02:46:05
+SQL> Rollback
+  2  Rollback;
+Rollback
+*
+ERROR at line 2:
+ORA-02181: invalid option to ROLLBACK WORK
+
+
+SQL> Rollback aff;
+Rollback aff
+         *
+ERROR at line 1:
+ORA-02181: invalid option to ROLLBACK WORK
+
+
+SQL> Rollback sz;
+Rollback sz
+         *
+ERROR at line 1:
+ORA-02181: invalid option to ROLLBACK WORK
+
+
+SQL> RollBACK;
+
+Rollback complete.
+
+SQL> select * from sz;
+
+NAME                 PASSWORD                    PIN DAILYPRACTIC
+-------------------- -------------------- ---------- ------------
+sathez               sz                         1204
+sathezsk             timeover                    111
+sathezsk             world                      1211
+satheesh             team                       1245
+affsatheesh          teamover                   1435
+
+SQL> save point a;
+SP2-0116: Illegal SAVE command
+SQL> select Top3 * from sz;
+select Top3 * from sz
+              *
+ERROR at line 1:
+ORA-00936: missing expression
+
+
+SQL> select top3 from emp;
+select top3 from emp
+       *
+ERROR at line 1:
+ORA-00904: "TOP3": invalid identifier
+
+
+SQL> select TOP3 * FROM EMP;
+select TOP3 * FROM EMP
+              *
+ERROR at line 1:
+ORA-00936: missing expression
+
+
+SQL> SELECT TOP 3 * FROM EMP;
+SELECT TOP 3 * FROM EMP
+           *
+ERROR at line 1:
+ORA-00923: FROM keyword not found where expected
+

@@ -1,0 +1,13 @@
+normal report venumuna 
+
+jmeter -n -t normal.jmx(jmeter saved file location file name) -l test.csv (yenna location 
+                                                                           nammaku venumo atha kutukanum
+                                                                           file extention kutukanum)
+
+Html report venumuna
+
+
+jmeter -n -t D:\Jmeter\normal.jmx(jmeter saved file location file name) -l D:\Jmeter\test.csv (yenna location 
+                                                                           nammaku venumo atha kutukanum
+                                                                           file extention kutukanum)
+-e -o D:\Jmeter\HtmlRepot\(extra e and o yentha folderla venumunu kututha pothum
